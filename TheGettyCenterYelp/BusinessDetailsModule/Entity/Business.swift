@@ -16,6 +16,7 @@ struct Business: Codable {
     let rating: Double
     let location: BusinessLocation
     let photos: [String]
+    let hours: [BusinessHours]
     
     private enum CodingKeys: String, CodingKey {
         case name
@@ -25,5 +26,6 @@ struct Business: Codable {
         case rating
         case location
         case photos
+        case hours
     }
 }
