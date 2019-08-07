@@ -19,7 +19,7 @@
 		2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7E22FA7695006FAAE5 /* BusinessHours.swift */; };
 		2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE8022FA7748006FAAE5 /* OpeningHours.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
-		2BFDF95F22FA85C900E08659 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions.swift */; };
+		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		2BB1FE7E22FA7695006FAAE5 /* BusinessHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHours.swift; sourceTree = "<group>"; };
 		2BB1FE8022FA7748006FAAE5 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
-		2BFDF95E22FA85C900E08659 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				2BB1FE7222F93119006FAAE5 /* Storyboarded.swift */,
-				2BFDF95E22FA85C900E08659 /* Extensions.swift */,
+				2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */,
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
 				2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */,
-				2BFDF95F22FA85C900E08659 /* Extensions.swift in Sources */,
+				2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */,
 				2BB1FE5422F93056006FAAE5 /* ViewController.swift in Sources */,
 				2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */,
 				2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */,
