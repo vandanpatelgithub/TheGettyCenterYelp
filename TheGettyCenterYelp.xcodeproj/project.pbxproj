@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B176EF322FBBA88003BFE14 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176EF222FBBA88003BFE14 /* HelperFunctions.swift */; };
+		2B176EF522FBBA9C003BFE14 /* HelperFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176EF422FBBA9C003BFE14 /* HelperFunctionsTests.swift */; };
+		2B176EF822FBBB31003BFE14 /* GettyCenterBusinessDetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7522F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json */; };
+		2B176EF922FBBB35003BFE14 /* BusinessHoursMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B176EEE22FBB99F003BFE14 /* BusinessHoursMockResponse.json */; };
+		2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176EFA22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift */; };
+		2B176EFF22FBBD8C003BFE14 /* BusinessLocationMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */; };
+		2B176F0122FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */; };
+		2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5422F93056006FAAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5322F93056006FAAE5 /* ViewController.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
 		2BB1FE5C22F93059006FAAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5A22F93059006FAAE5 /* LaunchScreen.storyboard */; };
 		2BB1FE7322F93119006FAAE5 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7222F93119006FAAE5 /* Storyboarded.swift */; };
-		2BB1FE7622F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7522F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json */; };
 		2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7A22F9346E006FAAE5 /* Business.swift */; };
 		2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7C22F936C0006FAAE5 /* BusinessLocation.swift */; };
 		2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE7E22FA7695006FAAE5 /* BusinessHours.swift */; };
@@ -33,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B176EEE22FBB99F003BFE14 /* BusinessHoursMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessHoursMockResponse.json; sourceTree = "<group>"; };
+		2B176EF222FBBA88003BFE14 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		2B176EF422FBBA9C003BFE14 /* HelperFunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctionsTests.swift; sourceTree = "<group>"; };
+		2B176EFA22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunsinessHoursDeserializationTests.swift; sourceTree = "<group>"; };
+		2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessLocationMockResponse.json; sourceTree = "<group>"; };
+		2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLocationDeserializationTests.swift; sourceTree = "<group>"; };
+		2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDeserializationTests.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5322F93056006FAAE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				2BB1FE7522F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json */,
+				2B176EEE22FBB99F003BFE14 /* BusinessHoursMockResponse.json */,
+				2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -134,6 +150,9 @@
 		2BB1FE7722F93406006FAAE5 /* Deserialization */ = {
 			isa = PBXGroup;
 			children = (
+				2B176EFA22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift */,
+				2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */,
+				2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */,
 			);
 			path = Deserialization;
 			sourceTree = "<group>";
@@ -161,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */,
+				2B176EF222FBBA88003BFE14 /* HelperFunctions.swift */,
+				2B176EF422FBBA9C003BFE14 /* HelperFunctionsTests.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,7 +278,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB1FE7622F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json in Resources */,
+				2B176EF922FBBB35003BFE14 /* BusinessHoursMockResponse.json in Resources */,
+				2B176EF822FBBB31003BFE14 /* GettyCenterBusinessDetailsMock.json in Resources */,
+				2B176EFF22FBBD8C003BFE14 /* BusinessLocationMockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
+				2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */,
+				2B176F0122FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift in Sources */,
 				2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */,
+				2B176EF522FBBA9C003BFE14 /* HelperFunctionsTests.swift in Sources */,
+				2B176EF322FBBA88003BFE14 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

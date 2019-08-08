@@ -1,0 +1,14 @@
+{
+    "address1": "1200 Getty Center Dr",
+    "address2": "",
+    "address3": "",
+    "city": "Los Angeles",
+    "zip_code": "90049",
+    "country": "US",
+    "state": "CA",
+    "display_address": [
+        "1200 Getty Center Dr",
+        "Los Angeles, CA 90049"
+    ],
+    "cross_streets": ""
+}

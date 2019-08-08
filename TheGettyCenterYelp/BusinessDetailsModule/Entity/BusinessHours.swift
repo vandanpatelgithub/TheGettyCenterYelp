@@ -8,10 +8,14 @@
 
 import Foundation
 
-struct BusinessHours: Codable {
+struct BusinessHours: Codable, Equatable {
     let openingHours: [OpeningHours]
     
     private enum CodingKeys: String, CodingKey {
         case openingHours = "open"
+    }
+    
+    static func == (lhs: BusinessHours, rhs: BusinessHours) -> Bool {
+        return lhs.openingHours == rhs.openingHours
     }
 }

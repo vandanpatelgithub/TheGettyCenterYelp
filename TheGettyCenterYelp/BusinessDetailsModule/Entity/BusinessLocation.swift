@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BusinessLocation: Codable {
+struct BusinessLocation: Codable, Equatable {
     let address1: String
     let address2: String
     let address3: String

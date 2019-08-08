@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct OpeningHours: Codable {
+struct OpeningHours: Codable, Equatable {
     let start: String
     let end: String
     let day: Int
