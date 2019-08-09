@@ -15,8 +15,18 @@
 		2B176EFF22FBBD8C003BFE14 /* BusinessLocationMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */; };
 		2B176F0122FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */; };
 		2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */; };
+		2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0522FD1081003BFE14 /* EndpointType.swift */; };
+		2B176F0822FD10C3003BFE14 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0722FD10C3003BFE14 /* HTTPMethod.swift */; };
+		2B176F0A22FD10EB003BFE14 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0922FD10EB003BFE14 /* HTTPTask.swift */; };
+		2B176F1022FD127D003BFE14 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F0F22FD127D003BFE14 /* NetworkRouter.swift */; };
+		2B176F1222FD12E4003BFE14 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F1122FD12E4003BFE14 /* Router.swift */; };
+		2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F1322FD1BC1003BFE14 /* YelpAPI.swift */; };
+		2B176F1722FD1FB9003BFE14 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F1622FD1FB9003BFE14 /* NetworkManager.swift */; };
+		2B176F1A22FD2859003BFE14 /* GCLandingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F1922FD2859003BFE14 /* GCLandingPageVC.swift */; };
+		2B176F1D22FD2C6F003BFE14 /* GCLandingPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F1C22FD2C6F003BFE14 /* GCLandingPageRouter.swift */; };
+		2B176F2122FD2D05003BFE14 /* GCLandingPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F2022FD2D05003BFE14 /* GCLandingPagePresenter.swift */; };
+		2B176F2322FD2D78003BFE14 /* GCLandingPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F2222FD2D78003BFE14 /* GCLandingPageInteractor.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
-		2BB1FE5422F93056006FAAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5322F93056006FAAE5 /* ViewController.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
 		2BB1FE5C22F93059006FAAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5A22F93059006FAAE5 /* LaunchScreen.storyboard */; };
@@ -47,9 +57,19 @@
 		2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessLocationMockResponse.json; sourceTree = "<group>"; };
 		2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLocationDeserializationTests.swift; sourceTree = "<group>"; };
 		2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDeserializationTests.swift; sourceTree = "<group>"; };
+		2B176F0522FD1081003BFE14 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		2B176F0722FD10C3003BFE14 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2B176F0922FD10EB003BFE14 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		2B176F0F22FD127D003BFE14 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		2B176F1122FD12E4003BFE14 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2B176F1322FD1BC1003BFE14 /* YelpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPI.swift; sourceTree = "<group>"; };
+		2B176F1622FD1FB9003BFE14 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2B176F1922FD2859003BFE14 /* GCLandingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageVC.swift; sourceTree = "<group>"; };
+		2B176F1C22FD2C6F003BFE14 /* GCLandingPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageRouter.swift; sourceTree = "<group>"; };
+		2B176F2022FD2D05003BFE14 /* GCLandingPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPagePresenter.swift; sourceTree = "<group>"; };
+		2B176F2222FD2D78003BFE14 /* GCLandingPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageInteractor.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BB1FE5322F93056006FAAE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BB1FE5822F93059006FAAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB1FE5B22F93059006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +104,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B176F0422FD1051003BFE14 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F1522FD1FAA003BFE14 /* Manager */,
+				2B176F0E22FD126B003BFE14 /* Service */,
+				2B176F0B22FD117D003BFE14 /* Endpoint */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		2B176F0B22FD117D003BFE14 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F0522FD1081003BFE14 /* EndpointType.swift */,
+				2B176F0722FD10C3003BFE14 /* HTTPMethod.swift */,
+				2B176F0922FD10EB003BFE14 /* HTTPTask.swift */,
+				2B176F1322FD1BC1003BFE14 /* YelpAPI.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		2B176F0E22FD126B003BFE14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F0F22FD127D003BFE14 /* NetworkRouter.swift */,
+				2B176F1122FD12E4003BFE14 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2B176F1522FD1FAA003BFE14 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F1622FD1FB9003BFE14 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2B176F1822FD2815003BFE14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F1922FD2859003BFE14 /* GCLandingPageVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B176F1B22FD2C50003BFE14 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F1C22FD2C6F003BFE14 /* GCLandingPageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2B176F1E22FD2CC5003BFE14 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F2022FD2D05003BFE14 /* GCLandingPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B176F1F22FD2CD2003BFE14 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F2222FD2D78003BFE14 /* GCLandingPageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		2BB1FE4522F93056006FAAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +195,10 @@
 		2BB1FE5022F93056006FAAE5 /* TheGettyCenterYelp */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F0422FD1051003BFE14 /* Network Layer */,
 				2BB1FE7822F9342F006FAAE5 /* BusinessDetailsModule */,
 				2BB1FE7122F930FB006FAAE5 /* Utilities */,
 				2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */,
-				2BB1FE5322F93056006FAAE5 /* ViewController.swift */,
 				2BB1FE5522F93056006FAAE5 /* Main.storyboard */,
 				2BB1FE5822F93059006FAAE5 /* Assets.xcassets */,
 				2BB1FE5A22F93059006FAAE5 /* LaunchScreen.storyboard */,
@@ -160,6 +250,10 @@
 		2BB1FE7822F9342F006FAAE5 /* BusinessDetailsModule */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F1F22FD2CD2003BFE14 /* Interactor */,
+				2B176F1E22FD2CC5003BFE14 /* Presenter */,
+				2B176F1B22FD2C50003BFE14 /* Router */,
+				2B176F1822FD2815003BFE14 /* View */,
 				2BB1FE7922F93444006FAAE5 /* Entity */,
 			);
 			path = BusinessDetailsModule;
@@ -293,12 +387,22 @@
 			files = (
 				2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */,
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
+				2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */,
+				2B176F2322FD2D78003BFE14 /* GCLandingPageInteractor.swift in Sources */,
 				2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */,
 				2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */,
-				2BB1FE5422F93056006FAAE5 /* ViewController.swift in Sources */,
+				2B176F1022FD127D003BFE14 /* NetworkRouter.swift in Sources */,
 				2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */,
+				2B176F0A22FD10EB003BFE14 /* HTTPTask.swift in Sources */,
 				2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */,
+				2B176F1D22FD2C6F003BFE14 /* GCLandingPageRouter.swift in Sources */,
+				2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */,
+				2B176F0822FD10C3003BFE14 /* HTTPMethod.swift in Sources */,
+				2B176F1722FD1FB9003BFE14 /* NetworkManager.swift in Sources */,
 				2BB1FE7322F93119006FAAE5 /* Storyboarded.swift in Sources */,
+				2B176F1A22FD2859003BFE14 /* GCLandingPageVC.swift in Sources */,
+				2B176F2122FD2D05003BFE14 /* GCLandingPagePresenter.swift in Sources */,
+				2B176F1222FD12E4003BFE14 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
