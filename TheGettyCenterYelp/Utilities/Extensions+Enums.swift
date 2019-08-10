@@ -31,8 +31,9 @@ enum DayOfTheWeek: String {
     case friday     = "Friday"
     case saturday   = "Saturday"
     case sunday     = "Sunday"
+    case none       = ""
     
-    init?(day: Int) {
+    init(day: Int) {
         if day == 0 {
             self = .monday
         } else if day == 1 {
@@ -48,7 +49,7 @@ enum DayOfTheWeek: String {
         } else if day == 6 {
             self = .sunday
         } else {
-            return nil
+            self = .none
         }
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol GCLandingPageViewable {
-    func didGetBusinessDetails(withResult result: Result<Business, Error>)
+    func didGetBusinessDetails(withUIModel model: BusinessUIModel?)
 }
 
 class GCLandingPageVC: UIViewController, Storyboarded {
@@ -23,12 +23,8 @@ class GCLandingPageVC: UIViewController, Storyboarded {
 }
 
 extension GCLandingPageVC: GCLandingPageViewable {
-    func didGetBusinessDetails(withResult result: Result<Business, Error>) {
-        switch result {
-        case let .success(business):
-            print(business.name)
-        case .failure(_):
-            break
-        }
+    func didGetBusinessDetails(withUIModel model: BusinessUIModel?) {
+        guard let uiModel = model else { return }
+        print(uiModel.hours.first?.openingHours.first?.start ?? "")
     }
 }

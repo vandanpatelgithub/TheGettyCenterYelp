@@ -9,7 +9,7 @@
 import Foundation
 
 struct OpeningHours: Codable, Equatable {
-    let start: String
-    let end: String
+    var start: String
+    var end: String
     let day: Int
 }

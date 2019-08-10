@@ -28,4 +28,17 @@ struct Business: Codable {
         case photos
         case hours
     }
+    
+    func convertToUIModel() -> BusinessUIModel {
+        let openingHours = self.hours.first?.openingHours.map { OpeningHoursUIModel(hours: $0) }
+        return BusinessUIModel(
+            name: self.name,
+            imageURL: self.imageURL,
+            yelpURL: self.yelpURL,
+            phoneNumber: self.phoneNumber,
+            rating: self.rating,
+            location: self.location,
+            photos: self.photos,
+            hours: [BusinessHoursUIModel(openingHours: openingHours ?? [])])
+    }
 }

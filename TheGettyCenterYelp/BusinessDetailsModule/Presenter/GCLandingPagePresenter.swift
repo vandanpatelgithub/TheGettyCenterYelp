@@ -24,7 +24,12 @@ class GCLandingPagePresenter {
 
 extension GCLandingPagePresenter: GCLandingPagePresentable {
     func didGetBusinessDetails(withResult result: Result<Business, Error>) {
-        view.didGetBusinessDetails(withResult: result)
+        switch result {
+        case let .success(business):
+            view.didGetBusinessDetails(withUIModel: business.convertToUIModel())
+        case .failure(_):
+            view.didGetBusinessDetails(withUIModel: nil)
+        }
     }
     
     func onViewDidLoad() {
