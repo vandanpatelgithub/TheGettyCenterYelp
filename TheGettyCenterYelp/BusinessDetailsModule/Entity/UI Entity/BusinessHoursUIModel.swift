@@ -9,5 +9,5 @@
 import Foundation
 
 struct BusinessHoursUIModel {
-    let openingHours: [OpeningHoursUIModel]
+    let openingHours: Set<OpeningHoursUIModel>
 }

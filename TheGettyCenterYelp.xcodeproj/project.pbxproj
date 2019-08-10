@@ -30,6 +30,12 @@
 		2B176F2722FE6DA4003BFE14 /* BusinessUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F2622FE6DA4003BFE14 /* BusinessUIModel.swift */; };
 		2B176F2A22FE6FEE003BFE14 /* BusinessHoursUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F2922FE6FEE003BFE14 /* BusinessHoursUIModel.swift */; };
 		2B176F2D22FE7BB8003BFE14 /* UIEntityConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F2C22FE7BB8003BFE14 /* UIEntityConversionTests.swift */; };
+		2B176F3222FF11A2003BFE14 /* HoursComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3122FF11A2003BFE14 /* HoursComponentView.swift */; };
+		2B176F3422FF11B4003BFE14 /* HoursComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F3322FF11B4003BFE14 /* HoursComponentView.xib */; };
+		2B176F3722FF186E003BFE14 /* HoursComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3622FF186E003BFE14 /* HoursComponentPresenter.swift */; };
+		2B176F3A22FF1912003BFE14 /* HoursComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3922FF1912003BFE14 /* HoursComponentBuilder.swift */; };
+		2B176F3D22FF2020003BFE14 /* HoursCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3B22FF2020003BFE14 /* HoursCell.swift */; };
+		2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F3C22FF2020003BFE14 /* HoursCell.xib */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -76,6 +82,12 @@
 		2B176F2622FE6DA4003BFE14 /* BusinessUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessUIModel.swift; sourceTree = "<group>"; };
 		2B176F2922FE6FEE003BFE14 /* BusinessHoursUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursUIModel.swift; sourceTree = "<group>"; };
 		2B176F2C22FE7BB8003BFE14 /* UIEntityConversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEntityConversionTests.swift; sourceTree = "<group>"; };
+		2B176F3122FF11A2003BFE14 /* HoursComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentView.swift; sourceTree = "<group>"; };
+		2B176F3322FF11B4003BFE14 /* HoursComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HoursComponentView.xib; sourceTree = "<group>"; };
+		2B176F3622FF186E003BFE14 /* HoursComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentPresenter.swift; sourceTree = "<group>"; };
+		2B176F3922FF1912003BFE14 /* HoursComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentBuilder.swift; sourceTree = "<group>"; };
+		2B176F3B22FF2020003BFE14 /* HoursCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCell.swift; sourceTree = "<group>"; };
+		2B176F3C22FF2020003BFE14 /* HoursCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HoursCell.xib; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +212,51 @@
 			path = "UI Entiry";
 			sourceTree = "<group>";
 		};
+		2B176F2E22FF1164003BFE14 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F2F22FF116E003BFE14 /* Hours Component */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2B176F2F22FF116E003BFE14 /* Hours Component */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F3822FF18FA003BFE14 /* Builder */,
+				2B176F3522FF1855003BFE14 /* Presenter */,
+				2B176F3022FF1181003BFE14 /* View */,
+			);
+			path = "Hours Component";
+			sourceTree = "<group>";
+		};
+		2B176F3022FF1181003BFE14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F3122FF11A2003BFE14 /* HoursComponentView.swift */,
+				2B176F3322FF11B4003BFE14 /* HoursComponentView.xib */,
+				2B176F3B22FF2020003BFE14 /* HoursCell.swift */,
+				2B176F3C22FF2020003BFE14 /* HoursCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B176F3522FF1855003BFE14 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F3622FF186E003BFE14 /* HoursComponentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B176F3822FF18FA003BFE14 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F3922FF1912003BFE14 /* HoursComponentBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		2BB1FE4522F93056006FAAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +278,7 @@
 		2BB1FE5022F93056006FAAE5 /* TheGettyCenterYelp */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F2E22FF1164003BFE14 /* Components */,
 				2B176F0422FD1051003BFE14 /* Network Layer */,
 				2BB1FE7822F9342F006FAAE5 /* BusinessDetailsModule */,
 				2BB1FE7122F930FB006FAAE5 /* Utilities */,
@@ -391,7 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB1FE5C22F93059006FAAE5 /* LaunchScreen.storyboard in Resources */,
+				2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */,
 				2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */,
+				2B176F3422FF11B4003BFE14 /* HoursComponentView.xib in Resources */,
 				2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B176F3722FF186E003BFE14 /* HoursComponentPresenter.swift in Sources */,
 				2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */,
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
 				2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */,
@@ -428,11 +489,14 @@
 				2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */,
 				2B176F0822FD10C3003BFE14 /* HTTPMethod.swift in Sources */,
 				2B176F1722FD1FB9003BFE14 /* NetworkManager.swift in Sources */,
+				2B176F3D22FF2020003BFE14 /* HoursCell.swift in Sources */,
 				2B176F2722FE6DA4003BFE14 /* BusinessUIModel.swift in Sources */,
+				2B176F3A22FF1912003BFE14 /* HoursComponentBuilder.swift in Sources */,
 				2BB1FE7322F93119006FAAE5 /* Storyboarded.swift in Sources */,
 				2B176F2A22FE6FEE003BFE14 /* BusinessHoursUIModel.swift in Sources */,
 				2B176F1A22FD2859003BFE14 /* GCLandingPageVC.swift in Sources */,
 				2B176F2122FD2D05003BFE14 /* GCLandingPagePresenter.swift in Sources */,
+				2B176F3222FF11A2003BFE14 /* HoursComponentView.swift in Sources */,
 				2B176F1222FD12E4003BFE14 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

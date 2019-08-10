@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct OpeningHoursUIModel {
+struct OpeningHoursUIModel: Hashable {
     
     let start: String
     let end: String

@@ -39,6 +39,6 @@ struct Business: Codable {
             rating: self.rating,
             location: self.location,
             photos: self.photos,
-            hours: [BusinessHoursUIModel(openingHours: openingHours ?? [])])
+            hours: [BusinessHoursUIModel(openingHours: Set(openingHours ?? []))])
     }
 }

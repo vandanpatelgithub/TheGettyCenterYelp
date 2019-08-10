@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vandan Patel. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     mutating func getTwelveHourString() -> String? {
@@ -23,7 +23,7 @@ extension String {
     }
 }
 
-enum DayOfTheWeek: String {
+enum DayOfTheWeek: String, Hashable {
     case monday     = "Monday"
     case tuesday    = "Tuesday"
     case wednesday  = "Wednesday"
