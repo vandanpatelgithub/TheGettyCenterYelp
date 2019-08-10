@@ -19,6 +19,14 @@ class UIEntityConversionTests: XCTestCase {
                                     state: "CA",
                                     country: "US")
     
+    let tuesday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 1))
+    let wednesday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 2))
+    let thursday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 3))
+    let friday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 4))
+    let saturday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "2100", day: 5))
+    let sunday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 6))
+    let monday = OpeningHoursUIModel(hours: OpeningHours(start: "1000", end: "1730", day: 0))
+    
     let hours = [
         BusinessHours(openingHours: [
             OpeningHours(start: "1000", end: "1730", day: 1),
@@ -38,29 +46,14 @@ class UIEntityConversionTests: XCTestCase {
                     let business = try self.decoder.decode(Business.self, from: data)
                     let uiModel = business.convertToUIModel()
                     
-                    XCTAssertEqual(uiModel.hours.first?.openingHours.first?.start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours.first?.end, "5:30 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours.first?.day.rawValue, "Tuesday")
-                    
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[1].start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[1].end, "5:30 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[1].day.rawValue, "Wednesday")
-                    
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[2].start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[2].end, "5:30 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[2].day.rawValue, "Thursday")
-                    
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[3].start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[3].end, "5:30 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[3].day.rawValue, "Friday")
-                    
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[4].start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[4].end, "9:00 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[4].day.rawValue, "Saturday")
-                    
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[5].start, "10:00 AM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[5].end, "5:30 PM")
-                    XCTAssertEqual(uiModel.hours.first?.openingHours[5].day.rawValue, "Sunday")
+                    XCTAssertEqual(uiModel.hours.first?.openingHours.count, 6)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.tuesday) ?? false)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.wednesday) ?? false)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.thursday) ?? false)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.friday) ?? false)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.saturday) ?? false)
+                    XCTAssertTrue(uiModel.hours.first?.openingHours.contains(self.sunday) ?? false)
+                    XCTAssertFalse(uiModel.hours.first?.openingHours.contains(self.monday) ?? false)
                     
                     XCTAssertEqual(uiModel.location, business.location)
                     XCTAssertEqual(uiModel.name, business.name)
