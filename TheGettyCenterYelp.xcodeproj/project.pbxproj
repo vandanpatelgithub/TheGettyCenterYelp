@@ -50,6 +50,8 @@
 		2B176F6022FFCF5C003BFE14 /* AddressComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5F22FFCF5C003BFE14 /* AddressComponentPresenter.swift */; };
 		2B176F6322FFD099003BFE14 /* AddressComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */; };
 		2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */; };
+		2B1AD2B3230090C5007892BC /* PhoneComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B1230090C5007892BC /* PhoneComponentCell.swift */; };
+		2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		2B176F5F22FFCF5C003BFE14 /* AddressComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenter.swift; sourceTree = "<group>"; };
 		2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentCell.swift; sourceTree = "<group>"; };
 		2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressComponentCell.xib; sourceTree = "<group>"; };
+		2B1AD2B1230090C5007892BC /* PhoneComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneComponentCell.swift; sourceTree = "<group>"; };
+		2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneComponentCell.xib; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -357,6 +361,8 @@
 				2B176F5B22FFCD3E003BFE14 /* AddressComponentView.xib */,
 				2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */,
 				2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */,
+				2B1AD2B1230090C5007892BC /* PhoneComponentCell.swift */,
+				2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -558,6 +564,7 @@
 				2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */,
 				2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */,
 				2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */,
+				2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */,
 				2B176F3422FF11B4003BFE14 /* HoursComponentView.xib in Resources */,
 				2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */,
 				2B176F5C22FFCD3E003BFE14 /* AddressComponentView.xib in Resources */,
@@ -599,6 +606,7 @@
 				2B176F1D22FD2C6F003BFE14 /* GCLandingPageRouter.swift in Sources */,
 				2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */,
 				2B176F0822FD10C3003BFE14 /* HTTPMethod.swift in Sources */,
+				2B1AD2B3230090C5007892BC /* PhoneComponentCell.swift in Sources */,
 				2B176F1722FD1FB9003BFE14 /* NetworkManager.swift in Sources */,
 				2B176F3D22FF2020003BFE14 /* HoursCell.swift in Sources */,
 				2B176F2722FE6DA4003BFE14 /* BusinessUIModel.swift in Sources */,

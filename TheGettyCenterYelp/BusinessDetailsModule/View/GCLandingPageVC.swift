@@ -22,6 +22,7 @@ class GCLandingPageVC: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.onViewDidLoad()
+        title = "The Getty Center"
     }
     
     func loadHoursComponent() {
@@ -31,7 +32,9 @@ class GCLandingPageVC: UIViewController, Storyboarded {
     }
     
     func loadAddressComponent() {
-        guard let addressComponent = AddressComponentBuilder.buildAddressComponent(withLocation: uiModel.location) else {
+        guard let addressComponent = AddressComponentBuilder.buildAddressComponent(
+            withLocation: uiModel.location,
+            andPhoneNo: uiModel.phoneNumber) else {
             return
         }
         addressComponent.presenter.loadData()

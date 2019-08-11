@@ -15,15 +15,17 @@ protocol AddressComponentPresentable: class {
 class AddressComponentPresenter {
     let view: AddressComponentViewable
     let location: BusinessLocation
+    let phoneNumber: String
     
-    init(view: AddressComponentViewable, location: BusinessLocation) {
+    init(view: AddressComponentViewable, location: BusinessLocation, phoneNumber: String) {
         self.view = view
         self.location = location
+        self.phoneNumber = phoneNumber
     }
 }
 
 extension AddressComponentPresenter: AddressComponentPresentable {
     func loadData() {
-        view.displayAddress(self.location)
+        view.displayAddress(self.location, self.phoneNumber)
     }
 }
