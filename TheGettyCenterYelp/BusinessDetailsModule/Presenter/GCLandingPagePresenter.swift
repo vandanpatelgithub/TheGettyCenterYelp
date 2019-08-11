@@ -11,6 +11,8 @@ import Foundation
 protocol GCLandingPagePresentable: class {
     func onViewDidLoad()
     func didGetBusinessDetails(withResult result: Result<Business, Error>)
+    
+    var interactor: GCLandingPageInteractable! { get set }
 }
 
 class GCLandingPagePresenter {

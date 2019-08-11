@@ -36,6 +36,14 @@
 		2B176F3A22FF1912003BFE14 /* HoursComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3922FF1912003BFE14 /* HoursComponentBuilder.swift */; };
 		2B176F3D22FF2020003BFE14 /* HoursCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F3B22FF2020003BFE14 /* HoursCell.swift */; };
 		2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F3C22FF2020003BFE14 /* HoursCell.xib */; };
+		2B176F4222FFBD79003BFE14 /* GCLandingPageVCMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4122FFBD79003BFE14 /* GCLandingPageVCMock.swift */; };
+		2B176F4422FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4322FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift */; };
+		2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4522FFBEA8003BFE14 /* NetworkManagerMock.swift */; };
+		2B176F4822FFC053003BFE14 /* GCLandingPageInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4722FFC053003BFE14 /* GCLandingPageInteractorMock.swift */; };
+		2B176F4A22FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4922FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift */; };
+		2B176F4C22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4B22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift */; };
+		2B176F5022FFC904003BFE14 /* HoursComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */; };
+		2B176F5422FFC9B9003BFE14 /* HoursComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5322FFC9B9003BFE14 /* HoursComponentPresenterTests.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -88,6 +96,14 @@
 		2B176F3922FF1912003BFE14 /* HoursComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentBuilder.swift; sourceTree = "<group>"; };
 		2B176F3B22FF2020003BFE14 /* HoursCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCell.swift; sourceTree = "<group>"; };
 		2B176F3C22FF2020003BFE14 /* HoursCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HoursCell.xib; sourceTree = "<group>"; };
+		2B176F4122FFBD79003BFE14 /* GCLandingPageVCMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageVCMock.swift; sourceTree = "<group>"; };
+		2B176F4322FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPagePresenterMock.swift; sourceTree = "<group>"; };
+		2B176F4522FFBEA8003BFE14 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		2B176F4722FFC053003BFE14 /* GCLandingPageInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageInteractorMock.swift; sourceTree = "<group>"; };
+		2B176F4922FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPagePresenterTests.swift; sourceTree = "<group>"; };
+		2B176F4B22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageInteractorTests.swift; sourceTree = "<group>"; };
+		2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentViewMock.swift; sourceTree = "<group>"; };
+		2B176F5322FFC9B9003BFE14 /* HoursComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentPresenterTests.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -257,6 +273,44 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		2B176F3F22FFBD4F003BFE14 /* BusinessDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F4022FFBD5F003BFE14 /* Mocks */,
+				2B176F4922FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift */,
+				2B176F4B22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift */,
+			);
+			path = BusinessDetailsModule;
+			sourceTree = "<group>";
+		};
+		2B176F4022FFBD5F003BFE14 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F4122FFBD79003BFE14 /* GCLandingPageVCMock.swift */,
+				2B176F4322FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift */,
+				2B176F4522FFBEA8003BFE14 /* NetworkManagerMock.swift */,
+				2B176F4722FFC053003BFE14 /* GCLandingPageInteractorMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2B176F4D22FFC8EA003BFE14 /* HoursComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F4E22FFC8F2003BFE14 /* Mocks */,
+				2B176F5322FFC9B9003BFE14 /* HoursComponentPresenterTests.swift */,
+			);
+			path = HoursComponent;
+			sourceTree = "<group>";
+		};
+		2B176F4E22FFC8F2003BFE14 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2BB1FE4522F93056006FAAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +348,8 @@
 		2BB1FE6522F93059006FAAE5 /* TheGettyCenterYelpTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F4D22FFC8EA003BFE14 /* HoursComponent */,
+				2B176F3F22FFBD4F003BFE14 /* BusinessDetailsModule */,
 				2B176F2B22FE7B8D003BFE14 /* UI Entiry */,
 				2BFDF95B22FA856900E08659 /* Utilities */,
 				2BB1FE7722F93406006FAAE5 /* Deserialization */,
@@ -335,11 +391,11 @@
 		2BB1FE7822F9342F006FAAE5 /* BusinessDetailsModule */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F1822FD2815003BFE14 /* View */,
 				2B176F1F22FD2CD2003BFE14 /* Interactor */,
 				2B176F1E22FD2CC5003BFE14 /* Presenter */,
-				2B176F1B22FD2C50003BFE14 /* Router */,
-				2B176F1822FD2815003BFE14 /* View */,
 				2BB1FE7922F93444006FAAE5 /* Entity */,
+				2B176F1B22FD2C50003BFE14 /* Router */,
 			);
 			path = BusinessDetailsModule;
 			sourceTree = "<group>";
@@ -505,12 +561,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B176F4422FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift in Sources */,
+				2B176F4C22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift in Sources */,
+				2B176F4A22FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift in Sources */,
 				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
+				2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */,
 				2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */,
+				2B176F4822FFC053003BFE14 /* GCLandingPageInteractorMock.swift in Sources */,
 				2B176F2D22FE7BB8003BFE14 /* UIEntityConversionTests.swift in Sources */,
+				2B176F4222FFBD79003BFE14 /* GCLandingPageVCMock.swift in Sources */,
 				2B176F0122FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift in Sources */,
 				2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */,
+				2B176F5422FFC9B9003BFE14 /* HoursComponentPresenterTests.swift in Sources */,
 				2B176EF522FBBA9C003BFE14 /* HelperFunctionsTests.swift in Sources */,
+				2B176F5022FFC904003BFE14 /* HoursComponentViewMock.swift in Sources */,
 				2B176EF322FBBA88003BFE14 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
