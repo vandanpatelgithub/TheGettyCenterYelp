@@ -44,6 +44,12 @@
 		2B176F4C22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4B22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift */; };
 		2B176F5022FFC904003BFE14 /* HoursComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */; };
 		2B176F5422FFC9B9003BFE14 /* HoursComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5322FFC9B9003BFE14 /* HoursComponentPresenterTests.swift */; };
+		2B176F5A22FFCD2E003BFE14 /* AddressComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5922FFCD2E003BFE14 /* AddressComponentView.swift */; };
+		2B176F5C22FFCD3E003BFE14 /* AddressComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F5B22FFCD3E003BFE14 /* AddressComponentView.xib */; };
+		2B176F5E22FFCEB0003BFE14 /* AddressComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5D22FFCEB0003BFE14 /* AddressComponentBuilder.swift */; };
+		2B176F6022FFCF5C003BFE14 /* AddressComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F5F22FFCF5C003BFE14 /* AddressComponentPresenter.swift */; };
+		2B176F6322FFD099003BFE14 /* AddressComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */; };
+		2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -104,6 +110,12 @@
 		2B176F4B22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageInteractorTests.swift; sourceTree = "<group>"; };
 		2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentViewMock.swift; sourceTree = "<group>"; };
 		2B176F5322FFC9B9003BFE14 /* HoursComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursComponentPresenterTests.swift; sourceTree = "<group>"; };
+		2B176F5922FFCD2E003BFE14 /* AddressComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentView.swift; sourceTree = "<group>"; };
+		2B176F5B22FFCD3E003BFE14 /* AddressComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressComponentView.xib; sourceTree = "<group>"; };
+		2B176F5D22FFCEB0003BFE14 /* AddressComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentBuilder.swift; sourceTree = "<group>"; };
+		2B176F5F22FFCF5C003BFE14 /* AddressComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenter.swift; sourceTree = "<group>"; };
+		2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentCell.swift; sourceTree = "<group>"; };
+		2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressComponentCell.xib; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +243,7 @@
 		2B176F2E22FF1164003BFE14 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2B176F5522FFCCCB003BFE14 /* AddressComponent */,
 				2B176F2F22FF116E003BFE14 /* Hours Component */,
 			);
 			path = Components;
@@ -309,6 +322,43 @@
 				2B176F4F22FFC904003BFE14 /* HoursComponentViewMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2B176F5522FFCCCB003BFE14 /* AddressComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F5822FFCD07003BFE14 /* View */,
+				2B176F5722FFCD00003BFE14 /* Presenter */,
+				2B176F5622FFCCF9003BFE14 /* Builder */,
+			);
+			path = AddressComponent;
+			sourceTree = "<group>";
+		};
+		2B176F5622FFCCF9003BFE14 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F5D22FFCEB0003BFE14 /* AddressComponentBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		2B176F5722FFCD00003BFE14 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F5F22FFCF5C003BFE14 /* AddressComponentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B176F5822FFCD07003BFE14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B176F5922FFCD2E003BFE14 /* AddressComponentView.swift */,
+				2B176F5B22FFCD3E003BFE14 /* AddressComponentView.xib */,
+				2B176F6122FFD099003BFE14 /* AddressComponentCell.swift */,
+				2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2BB1FE4522F93056006FAAE5 = {
@@ -506,9 +556,11 @@
 			files = (
 				2BB1FE5C22F93059006FAAE5 /* LaunchScreen.storyboard in Resources */,
 				2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */,
+				2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */,
 				2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */,
 				2B176F3422FF11B4003BFE14 /* HoursComponentView.xib in Resources */,
 				2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */,
+				2B176F5C22FFCD3E003BFE14 /* AddressComponentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,12 +584,15 @@
 				2B176F3722FF186E003BFE14 /* HoursComponentPresenter.swift in Sources */,
 				2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */,
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
+				2B176F5A22FFCD2E003BFE14 /* AddressComponentView.swift in Sources */,
+				2B176F5E22FFCEB0003BFE14 /* AddressComponentBuilder.swift in Sources */,
 				2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */,
 				2B176F2322FD2D78003BFE14 /* GCLandingPageInteractor.swift in Sources */,
 				2B176F2522FE6B0C003BFE14 /* OpeningHoursUIModel.swift in Sources */,
 				2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */,
 				2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */,
 				2B176F1022FD127D003BFE14 /* NetworkRouter.swift in Sources */,
+				2B176F6022FFCF5C003BFE14 /* AddressComponentPresenter.swift in Sources */,
 				2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */,
 				2B176F0A22FD10EB003BFE14 /* HTTPTask.swift in Sources */,
 				2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */,
@@ -552,6 +607,7 @@
 				2B176F2A22FE6FEE003BFE14 /* BusinessHoursUIModel.swift in Sources */,
 				2B176F1A22FD2859003BFE14 /* GCLandingPageVC.swift in Sources */,
 				2B176F2122FD2D05003BFE14 /* GCLandingPagePresenter.swift in Sources */,
+				2B176F6322FFD099003BFE14 /* AddressComponentCell.swift in Sources */,
 				2B176F3222FF11A2003BFE14 /* HoursComponentView.swift in Sources */,
 				2B176F1222FD12E4003BFE14 /* Router.swift in Sources */,
 			);

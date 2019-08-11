@@ -29,6 +29,14 @@ class GCLandingPageVC: UIViewController, Storyboarded {
         hoursComponent.presenter.loadData()
         stackView.addArrangedSubview(hoursComponent)
     }
+    
+    func loadAddressComponent() {
+        guard let addressComponent = AddressComponentBuilder.buildAddressComponent(withLocation: uiModel.location) else {
+            return
+        }
+        addressComponent.presenter.loadData()
+        stackView.addArrangedSubview(addressComponent)
+    }
 }
 
 extension GCLandingPageVC: GCLandingPageViewable {
@@ -37,6 +45,7 @@ extension GCLandingPageVC: GCLandingPageViewable {
         self.uiModel = uiModel
         DispatchQueue.main.async {
             self.loadHoursComponent()
+            self.loadAddressComponent()
         }
     }
 }
