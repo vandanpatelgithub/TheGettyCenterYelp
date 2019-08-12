@@ -52,6 +52,8 @@
 		2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */; };
 		2B1AD2B3230090C5007892BC /* PhoneComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B1230090C5007892BC /* PhoneComponentCell.swift */; };
 		2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */; };
+		2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */; };
+		2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -120,6 +122,8 @@
 		2B176F6222FFD099003BFE14 /* AddressComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressComponentCell.xib; sourceTree = "<group>"; };
 		2B1AD2B1230090C5007892BC /* PhoneComponentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneComponentCell.swift; sourceTree = "<group>"; };
 		2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneComponentCell.xib; sourceTree = "<group>"; };
+		2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentViewMock.swift; sourceTree = "<group>"; };
+		2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenterTests.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -367,6 +371,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2B1AD2B523011201007892BC /* AddressComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AD2B623011211007892BC /* Mocks */,
+				2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */,
+			);
+			path = AddressComponent;
+			sourceTree = "<group>";
+		};
+		2B1AD2B623011211007892BC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2BB1FE4522F93056006FAAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +425,7 @@
 		2BB1FE6522F93059006FAAE5 /* TheGettyCenterYelpTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B1AD2B523011201007892BC /* AddressComponent */,
 				2B176F4D22FFC8EA003BFE14 /* HoursComponent */,
 				2B176F3F22FFBD4F003BFE14 /* BusinessDetailsModule */,
 				2B176F2B22FE7B8D003BFE14 /* UI Entiry */,
@@ -631,6 +653,8 @@
 				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
 				2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */,
 				2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */,
+				2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */,
+				2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */,
 				2B176F4822FFC053003BFE14 /* GCLandingPageInteractorMock.swift in Sources */,
 				2B176F2D22FE7BB8003BFE14 /* UIEntityConversionTests.swift in Sources */,
 				2B176F4222FFBD79003BFE14 /* GCLandingPageVCMock.swift in Sources */,
