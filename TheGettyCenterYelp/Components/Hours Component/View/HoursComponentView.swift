@@ -18,7 +18,7 @@ protocol HoursComponentViewable: class {
 
 class HoursComponentView: UIView {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: ContentSizedTableView!
     var presenter: HoursComponentPresentable!
     var hours = Set<OpeningHoursUIModel>()
     let days: [DayOfTheWeek] = [.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday]

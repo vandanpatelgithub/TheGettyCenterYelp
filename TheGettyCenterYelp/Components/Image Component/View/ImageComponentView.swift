@@ -13,7 +13,8 @@ protocol ImageComponentViewable: class {
 }
 
 class ImageComponentView: UIView {
-    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBOutlet weak var businessImageView: UIImageView!
     var presenter: ImageComponentPresentable!
     
     override func awakeFromNib() {
@@ -23,5 +24,12 @@ class ImageComponentView: UIView {
 
 extension ImageComponentView: ImageComponentViewable {
     func didLoadImageData(data: Data?) {
+        guard let data = data else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.businessImageView.image = UIImage(data: data)
+        }
+        
     }
 }

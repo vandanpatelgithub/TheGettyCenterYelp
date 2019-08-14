@@ -16,27 +16,39 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-p7-kCb">
-                    <rect key="frame" x="0.0" y="44" width="414" height="165"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5M-ij-Zpr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-p7-kCb" customClass="ContentSizedTableView" customModule="TheGettyCenterYelp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="bq3-YN-pbD"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="nc1-DG-oKh"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <connections>
-                        <outlet property="dataSource" destination="iN0-l3-epB" id="bq3-YN-pbD"/>
-                        <outlet property="delegate" destination="iN0-l3-epB" id="nc1-DG-oKh"/>
-                    </connections>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="c5y-p7-kCb" secondAttribute="bottom" id="D5g-ah-YNw"/>
+                        <constraint firstAttribute="trailing" secondItem="c5y-p7-kCb" secondAttribute="trailing" id="KXD-Dz-V4j"/>
+                        <constraint firstItem="c5y-p7-kCb" firstAttribute="leading" secondItem="I5M-ij-Zpr" secondAttribute="leading" id="LMx-Q2-tM8"/>
+                        <constraint firstItem="c5y-p7-kCb" firstAttribute="top" secondItem="I5M-ij-Zpr" secondAttribute="top" id="oMn-DW-iU8"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c5y-p7-kCb" secondAttribute="bottom" id="F48-CF-HLM"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c5y-p7-kCb" secondAttribute="trailing" id="Ihb-ms-r49"/>
-                <constraint firstItem="c5y-p7-kCb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Np0-CM-hQc"/>
-                <constraint firstItem="c5y-p7-kCb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jul-E5-BQc"/>
+                <constraint firstAttribute="trailing" secondItem="I5M-ij-Zpr" secondAttribute="trailing" id="dAh-rO-oTH"/>
+                <constraint firstAttribute="bottom" secondItem="I5M-ij-Zpr" secondAttribute="bottom" id="gGb-E4-e7J"/>
+                <constraint firstItem="I5M-ij-Zpr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nSY-2T-xoV"/>
+                <constraint firstItem="I5M-ij-Zpr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xcp-Ze-Vhc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="tableView" destination="c5y-p7-kCb" id="fau-Rm-kMh"/>
+                <outlet property="tableView" destination="c5y-p7-kCb" id="xJb-5Q-MvM"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="-65.959821428571431"/>
         </view>

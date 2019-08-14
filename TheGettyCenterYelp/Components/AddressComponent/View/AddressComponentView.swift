@@ -18,7 +18,7 @@ protocol AddressComponentViewable: class {
 }
 
 class AddressComponentView: UIView {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: ContentSizedTableView!
     
     var location: BusinessLocation?
     var phoneNumber: String?
