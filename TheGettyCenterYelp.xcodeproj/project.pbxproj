@@ -54,6 +54,11 @@
 		2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */; };
 		2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */; };
 		2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */; };
+		2B8E0937230267A900E84939 /* ImageComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E0936230267A900E84939 /* ImageComponentView.swift */; };
+		2B8E0939230267B700E84939 /* ImageComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8E0938230267B700E84939 /* ImageComponentView.xib */; };
+		2B8E093B2302685300E84939 /* ImageComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E093A2302685300E84939 /* ImageComponentPresenter.swift */; };
+		2B8E093D230268AA00E84939 /* ImageComponentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E093C230268AA00E84939 /* ImageComponentInteractor.swift */; };
+		2B8E093F2302693500E84939 /* ImageComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E093E2302693500E84939 /* ImageComponentBuilder.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
 		2BB1FE5722F93056006FAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5522F93056006FAAE5 /* Main.storyboard */; };
 		2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5822F93059006FAAE5 /* Assets.xcassets */; };
@@ -124,6 +129,11 @@
 		2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneComponentCell.xib; sourceTree = "<group>"; };
 		2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentViewMock.swift; sourceTree = "<group>"; };
 		2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenterTests.swift; sourceTree = "<group>"; };
+		2B8E0936230267A900E84939 /* ImageComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponentView.swift; sourceTree = "<group>"; };
+		2B8E0938230267B700E84939 /* ImageComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageComponentView.xib; sourceTree = "<group>"; };
+		2B8E093A2302685300E84939 /* ImageComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponentPresenter.swift; sourceTree = "<group>"; };
+		2B8E093C230268AA00E84939 /* ImageComponentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponentInteractor.swift; sourceTree = "<group>"; };
+		2B8E093E2302693500E84939 /* ImageComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponentBuilder.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB1FE5622F93056006FAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -251,6 +261,7 @@
 		2B176F2E22FF1164003BFE14 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2B8E0931230265A700E84939 /* Image Component */,
 				2B176F5522FFCCCB003BFE14 /* AddressComponent */,
 				2B176F2F22FF116E003BFE14 /* Hours Component */,
 			);
@@ -386,6 +397,50 @@
 				2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2B8E0931230265A700E84939 /* Image Component */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E09352302678C00E84939 /* Builder */,
+				2B8E09342302678500E84939 /* Presenter */,
+				2B8E09332302677F00E84939 /* View */,
+				2B8E09322302677600E84939 /* Interactror */,
+			);
+			path = "Image Component";
+			sourceTree = "<group>";
+		};
+		2B8E09322302677600E84939 /* Interactror */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E093C230268AA00E84939 /* ImageComponentInteractor.swift */,
+			);
+			path = Interactror;
+			sourceTree = "<group>";
+		};
+		2B8E09332302677F00E84939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E0936230267A900E84939 /* ImageComponentView.swift */,
+				2B8E0938230267B700E84939 /* ImageComponentView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B8E09342302678500E84939 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E093A2302685300E84939 /* ImageComponentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B8E09352302678C00E84939 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E093E2302693500E84939 /* ImageComponentBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		2BB1FE4522F93056006FAAE5 = {
@@ -584,6 +639,7 @@
 			files = (
 				2BB1FE5C22F93059006FAAE5 /* LaunchScreen.storyboard in Resources */,
 				2B176F3E22FF2020003BFE14 /* HoursCell.xib in Resources */,
+				2B8E0939230267B700E84939 /* ImageComponentView.xib in Resources */,
 				2B176F6422FFD099003BFE14 /* AddressComponentCell.xib in Resources */,
 				2BB1FE5922F93059006FAAE5 /* Assets.xcassets in Resources */,
 				2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */,
@@ -614,14 +670,18 @@
 				2BB1FE7D22F936C0006FAAE5 /* BusinessLocation.swift in Sources */,
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
 				2B176F5A22FFCD2E003BFE14 /* AddressComponentView.swift in Sources */,
+				2B8E093D230268AA00E84939 /* ImageComponentInteractor.swift in Sources */,
+				2B8E093F2302693500E84939 /* ImageComponentBuilder.swift in Sources */,
 				2B176F5E22FFCEB0003BFE14 /* AddressComponentBuilder.swift in Sources */,
 				2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */,
+				2B8E093B2302685300E84939 /* ImageComponentPresenter.swift in Sources */,
 				2B176F2322FD2D78003BFE14 /* GCLandingPageInteractor.swift in Sources */,
 				2B176F2522FE6B0C003BFE14 /* OpeningHoursUIModel.swift in Sources */,
 				2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */,
 				2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */,
 				2B176F1022FD127D003BFE14 /* NetworkRouter.swift in Sources */,
 				2B176F6022FFCF5C003BFE14 /* AddressComponentPresenter.swift in Sources */,
+				2B8E0937230267A900E84939 /* ImageComponentView.swift in Sources */,
 				2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */,
 				2B176F0A22FD10EB003BFE14 /* HTTPTask.swift in Sources */,
 				2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */,

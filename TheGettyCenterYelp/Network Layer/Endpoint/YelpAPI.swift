@@ -16,6 +16,7 @@ enum YelpAPIConstants: String {
 
 public enum YelpAPI {
     case getDetailsForBusiness(withID: String)
+    case loadImageData(forURL: String)
 }
 
 extension YelpAPI: EndPointType {
@@ -26,6 +27,11 @@ extension YelpAPI: EndPointType {
                 fatalError("baseURL could not be configured.")
             }
             return url
+        case .loadImageData(let url):
+            guard let url = URL(string: url) else {
+                fatalError("baseURL could not be configured.")
+            }
+            return url
         }
     }
     
@@ -33,6 +39,8 @@ extension YelpAPI: EndPointType {
         switch self {
         case let .getDetailsForBusiness(ID):
             return "businesses/\(ID)"
+        case .loadImageData:
+            return ""
         }
     }
     
@@ -44,6 +52,8 @@ extension YelpAPI: EndPointType {
         switch self {
         case .getDetailsForBusiness:
             return .requestHeaders(additionHeaders: headers)
+        case .loadImageData:
+            return .request
         }
     }
     
@@ -51,6 +61,8 @@ extension YelpAPI: EndPointType {
         switch self {
         case .getDetailsForBusiness:
             return [YelpAPIConstants.authorization.rawValue: "\(YelpAPIConstants.bearer.rawValue) \(YelpAPIConstants.apiKey.rawValue)"]
+        case .loadImageData:
+            return nil
         }
     }
 }
