@@ -18,6 +18,8 @@ protocol AddressComponentViewable: class {
 }
 
 class AddressComponentView: UIView {
+    
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: ContentSizedTableView!
     
     var location: BusinessLocation?
@@ -31,6 +33,7 @@ class AddressComponentView: UIView {
                            forCellReuseIdentifier: AddressComponentViewConstants.addressCellID.rawValue)
         tableView.register(UINib(nibName: "PhoneComponentCell", bundle: nil),
                            forCellReuseIdentifier: AddressComponentViewConstants.phoneCellID.rawValue)
+        containerView.dropShadow()
     }
 }
 

@@ -17,31 +17,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-1D-vqU">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <rect key="frame" x="16" y="16" width="382" height="284"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-V2-Hcg">
-                            <rect key="frame" x="16" y="16" width="382" height="268"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-V2-Hcg">
+                            <rect key="frame" x="16" y="16" width="350" height="252"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCL-WE-PVr">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="38.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y5-d6-QwW">
-                                    <rect key="frame" x="0.0" y="55.5" width="382" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="53.5" width="350" height="38.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-PW-DIc">
-                                    <rect key="frame" x="0.0" y="111" width="382" height="46"/>
+                                    <rect key="frame" x="0.0" y="107" width="350" height="38"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-EB-m5a">
-                                    <rect key="frame" x="0.0" y="167" width="382" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="160" width="350" height="38.5"/>
                                     <state key="normal" title="Go To Website">
                                         <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
@@ -50,7 +50,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-dL-6ML">
-                                    <rect key="frame" x="0.0" y="222.5" width="382" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="213.5" width="350" height="38.5"/>
                                     <state key="normal" title="Top 3 Reviews">
                                         <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
@@ -72,15 +72,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="JHU-1D-vqU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2Tj-KI-7jA"/>
-                <constraint firstItem="JHU-1D-vqU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AAX-yp-w06"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JHU-1D-vqU" secondAttribute="trailing" id="eOA-MJ-fsq"/>
+                <constraint firstItem="JHU-1D-vqU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="2Tj-KI-7jA"/>
+                <constraint firstItem="JHU-1D-vqU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="AAX-yp-w06"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JHU-1D-vqU" secondAttribute="trailing" constant="16" id="eOA-MJ-fsq"/>
                 <constraint firstItem="JHU-1D-vqU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="o7R-YS-i9g"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="businessNameLabel" destination="KCL-WE-PVr" id="RU5-ao-upE"/>
+                <outlet property="containerView" destination="JHU-1D-vqU" id="lnJ-i8-gcg"/>
                 <outlet property="ratingLabel" destination="2Y5-d6-QwW" id="1IM-PS-dyl"/>
                 <outlet property="totalReviewsLabel" destination="hKC-PW-DIc" id="kZm-Bx-sXz"/>
             </connections>

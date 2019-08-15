@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BusinessUIModel {
+struct BusinessUIModel: Equatable {
     let name: String
     let imageURL: String
     let totalReviews: Int

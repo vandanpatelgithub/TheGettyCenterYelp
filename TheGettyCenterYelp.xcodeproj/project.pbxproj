@@ -67,6 +67,8 @@
 		2BCF99F4230451A800A320E3 /* NameComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF99F3230451A800A320E3 /* NameComponentView.xib */; };
 		2BCF99F6230452B700A320E3 /* NameComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF99F5230452B700A320E3 /* NameComponentPresenter.swift */; };
 		2BCF99F9230453D700A320E3 /* NameComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF99F8230453D700A320E3 /* NameComponentBuilder.swift */; };
+		2BCF99FF2305046300A320E3 /* NameComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */; };
+		2BCF9A01230504C600A320E3 /* NameComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
 		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
@@ -146,6 +148,8 @@
 		2BCF99F3230451A800A320E3 /* NameComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameComponentView.xib; sourceTree = "<group>"; };
 		2BCF99F5230452B700A320E3 /* NameComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentPresenter.swift; sourceTree = "<group>"; };
 		2BCF99F8230453D700A320E3 /* NameComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentBuilder.swift; sourceTree = "<group>"; };
+		2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentViewMock.swift; sourceTree = "<group>"; };
+		2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentPresenterTests.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -434,6 +438,7 @@
 		2BB1FE6522F93059006FAAE5 /* TheGettyCenterYelpTests */ = {
 			isa = PBXGroup;
 			children = (
+				2BCF99FA2305043200A320E3 /* NameComponent */,
 				2B1AD2B523011201007892BC /* AddressComponent */,
 				2B176F4D22FFC8EA003BFE14 /* HoursComponent */,
 				2B176F3F22FFBD4F003BFE14 /* BusinessDetailsModule */,
@@ -532,6 +537,23 @@
 				2BCF99F8230453D700A320E3 /* NameComponentBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		2BCF99FA2305043200A320E3 /* NameComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF99FB2305044100A320E3 /* Mocks */,
+				2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */,
+			);
+			path = NameComponent;
+			sourceTree = "<group>";
+		};
+		2BCF99FB2305044100A320E3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		2BFDF95B22FA856900E08659 /* Utilities */ = {
@@ -697,9 +719,11 @@
 			files = (
 				2B176F4422FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift in Sources */,
 				2B176F4C22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift in Sources */,
+				2BCF9A01230504C600A320E3 /* NameComponentPresenterTests.swift in Sources */,
 				2B176F4A22FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift in Sources */,
 				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
 				2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */,
+				2BCF99FF2305046300A320E3 /* NameComponentViewMock.swift in Sources */,
 				2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */,
 				2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */,
 				2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */,

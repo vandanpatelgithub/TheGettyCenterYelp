@@ -18,7 +18,9 @@ protocol HoursComponentViewable: class {
 
 class HoursComponentView: UIView {
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: ContentSizedTableView!
+    
     var presenter: HoursComponentPresentable!
     var hours = Set<OpeningHoursUIModel>()
     let days: [DayOfTheWeek] = [.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday]
@@ -28,6 +30,7 @@ class HoursComponentView: UIView {
         tableView.register(UINib(nibName: "HoursCell", bundle: nil),
                            forCellReuseIdentifier: HoursComponentViewConstants.cellID.rawValue)
         tableView.tableFooterView = UIView()
+        containerView.dropShadow()
     }
     
     private func populateCell(_ indexPath: IndexPath, _ cell: HoursCell) {

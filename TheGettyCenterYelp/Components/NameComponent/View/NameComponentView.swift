@@ -13,6 +13,7 @@ protocol NameComponentViewable: class {
 }
 
 class NameComponentView: UIView {
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var businessNameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var totalReviewsLabel: UILabel!
@@ -20,13 +21,17 @@ class NameComponentView: UIView {
     
     var presenter: NameComponentPresentable!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        containerView.dropShadow()
+    }
+    
     @IBAction func didTapGoToWebsite(_ sender: UIButton) {
         presenter.didTapGoToWebsite()
     }
     
     @IBAction func didTapTopReviews(_ sender: UIButton) {
     }
-    
 }
 
 extension NameComponentView: NameComponentViewable {

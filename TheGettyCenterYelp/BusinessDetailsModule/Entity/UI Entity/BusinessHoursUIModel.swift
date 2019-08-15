@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct BusinessHoursUIModel {
+struct BusinessHoursUIModel: Equatable {
     let openingHours: Set<OpeningHoursUIModel>
 }

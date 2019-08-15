@@ -17,10 +17,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5M-ij-Zpr">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+                    <rect key="frame" x="16" y="16" width="382" height="211"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-p7-kCb" customClass="ContentSizedTableView" customModule="TheGettyCenterYelp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="243"/>
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="211"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <connections>
@@ -36,18 +36,24 @@
                         <constraint firstItem="c5y-p7-kCb" firstAttribute="leading" secondItem="I5M-ij-Zpr" secondAttribute="leading" id="LMx-Q2-tM8"/>
                         <constraint firstItem="c5y-p7-kCb" firstAttribute="top" secondItem="I5M-ij-Zpr" secondAttribute="top" id="oMn-DW-iU8"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="I5M-ij-Zpr" secondAttribute="trailing" id="dAh-rO-oTH"/>
-                <constraint firstAttribute="bottom" secondItem="I5M-ij-Zpr" secondAttribute="bottom" id="gGb-E4-e7J"/>
-                <constraint firstItem="I5M-ij-Zpr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nSY-2T-xoV"/>
-                <constraint firstItem="I5M-ij-Zpr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xcp-Ze-Vhc"/>
+                <constraint firstAttribute="trailing" secondItem="I5M-ij-Zpr" secondAttribute="trailing" constant="16" id="dAh-rO-oTH"/>
+                <constraint firstAttribute="bottom" secondItem="I5M-ij-Zpr" secondAttribute="bottom" constant="16" id="gGb-E4-e7J"/>
+                <constraint firstItem="I5M-ij-Zpr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="nSY-2T-xoV"/>
+                <constraint firstItem="I5M-ij-Zpr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xcp-Ze-Vhc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="containerView" destination="I5M-ij-Zpr" id="8sU-jF-mgr"/>
                 <outlet property="tableView" destination="c5y-p7-kCb" id="xJb-5Q-MvM"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="-65.959821428571431"/>

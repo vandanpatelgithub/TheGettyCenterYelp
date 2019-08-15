@@ -10,19 +10,9 @@ import Foundation
 
 protocol NetworkManagable {
     func getDetailsForBusiness(withID id: String, completion: @escaping (Result<Business, Error>) -> ())
-    func loadImageData(forURL url: String, completion: @escaping (Result<Data, Error>) -> ())
 }
 
-struct NetworkManager: NetworkManagable {
-    func loadImageData(forURL url: String, completion: @escaping (Result<Data, Error>) -> ()) {
-        router.request(.loadImageData(forURL: url)) { (data, response, error) in
-            if let error = error { completion(.failure(error)) }
-            else if let data = data, let _ = response {
-                completion(.success(data))
-            }
-        }
-    }
-    
+struct NetworkManager: NetworkManagable {    
     let router: Router<YelpAPI>
     
     func getDetailsForBusiness(withID id: String, completion: @escaping (Result<Business, Error>) -> ()) {

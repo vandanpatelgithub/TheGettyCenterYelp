@@ -24,9 +24,10 @@ let mockBusiness = Business(name: "mockName",
                                                        city: "mockCity",
                                                        zipcode: "mockZipCode",
                                                        state: "mockState",
-                                                       country: "mockCountry")
-    , photos: [""],
-      hours: [])
+                                                       country: "mockCountry"),
+                            photos: [],
+                            hours: [],
+                            totalReviews: 3000)
 
 class NetworkManagerMock: NetworkManagable {
     func getDetailsForBusiness(withID id: String, completion: @escaping (Result<Business, Error>) -> ()) {

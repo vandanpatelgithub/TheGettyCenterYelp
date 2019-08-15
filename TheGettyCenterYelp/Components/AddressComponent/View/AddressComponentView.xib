@@ -16,25 +16,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ba-Yi-14k" customClass="ContentSizedTableView" customModule="TheGettyCenterYelp" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFC-Hc-TLM">
+                    <rect key="frame" x="16" y="16" width="382" height="86"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ba-Yi-14k" customClass="ContentSizedTableView" customModule="TheGettyCenterYelp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="86"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="YzQ-8v-eFH"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="6tk-Kn-eJz"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <connections>
-                        <outlet property="dataSource" destination="iN0-l3-epB" id="YzQ-8v-eFH"/>
-                        <outlet property="delegate" destination="iN0-l3-epB" id="6tk-Kn-eJz"/>
-                    </connections>
-                </tableView>
+                    <constraints>
+                        <constraint firstItem="5Ba-Yi-14k" firstAttribute="top" secondItem="hFC-Hc-TLM" secondAttribute="top" id="BCk-F1-pWx"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ba-Yi-14k" secondAttribute="bottom" id="JBv-EX-Gn4"/>
+                        <constraint firstAttribute="trailing" secondItem="5Ba-Yi-14k" secondAttribute="trailing" id="ZmB-EJ-fwb"/>
+                        <constraint firstItem="5Ba-Yi-14k" firstAttribute="leading" secondItem="hFC-Hc-TLM" secondAttribute="leading" id="fUx-HP-r4G"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="5Ba-Yi-14k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2u9-X8-7nr"/>
-                <constraint firstItem="5Ba-Yi-14k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZEA-m5-SiN"/>
-                <constraint firstAttribute="bottom" secondItem="5Ba-Yi-14k" secondAttribute="bottom" id="bX5-GF-0mZ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Ba-Yi-14k" secondAttribute="trailing" id="oHe-72-ay4"/>
+                <constraint firstItem="hFC-Hc-TLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Chv-9f-ueB"/>
+                <constraint firstAttribute="bottom" secondItem="hFC-Hc-TLM" secondAttribute="bottom" constant="16" id="RSm-n5-UfS"/>
+                <constraint firstAttribute="trailing" secondItem="hFC-Hc-TLM" secondAttribute="trailing" constant="16" id="Thg-Ng-IuZ"/>
+                <constraint firstItem="hFC-Hc-TLM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="WsX-jv-CYt"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="containerView" destination="hFC-Hc-TLM" id="eEJ-wH-cNC"/>
                 <outlet property="tableView" destination="5Ba-Yi-14k" id="eJ6-zf-i2W"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="-107.8125"/>

@@ -25,15 +25,15 @@ class NameComponentPresenter {
 
 extension NameComponentPresenter: NameComponentPresentable {
     func didTapGoToWebsite() {
-        openUrl(urlStr: self.business.yelpURL)
+        openUrl(urlString: self.business.yelpURL)
     }
     
     func loadNameComponent() {
         view.didGetBusinessDetails(withBusiness: self.business)
     }
     
-    func openUrl(urlStr: String!) {
-        if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
+    private func openUrl(urlString: String) {
+        if let url = URL(string: urlString), !url.absoluteString.isEmpty {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }

@@ -54,8 +54,6 @@ enum DayOfTheWeek: String, Hashable {
     }
 }
 
-import UIKit
-
 final class ContentSizedTableView: UITableView {
     override var contentSize:CGSize {
         didSet {
@@ -66,5 +64,18 @@ final class ContentSizedTableView: UITableView {
     override var intrinsicContentSize: CGSize {
         layoutIfNeeded()
         return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
+    }
+}
+
+extension UIView {
+    func dropShadow(scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.8
+        layer.shadowOffset = CGSize(width: -1, height: -1)
+        layer.shadowRadius = 3
+
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
