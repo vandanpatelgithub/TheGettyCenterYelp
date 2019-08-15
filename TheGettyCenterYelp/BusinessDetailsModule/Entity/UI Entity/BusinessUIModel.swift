@@ -11,6 +11,7 @@ import Foundation
 struct BusinessUIModel {
     let name: String
     let imageURL: String
+    let totalReviews: Int
     let yelpURL: String
     let phoneNumber: String
     let rating: Double

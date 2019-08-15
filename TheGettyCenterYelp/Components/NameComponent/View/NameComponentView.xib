@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NameComponentView" customModule="TheGettyCenterYelp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NameComponentView" customModule="TheGettyCenterYelp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="334"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-1D-vqU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-V2-Hcg">
+                            <rect key="frame" x="16" y="16" width="382" height="268"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCL-WE-PVr">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y5-d6-QwW">
+                                    <rect key="frame" x="0.0" y="55.5" width="382" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-PW-DIc">
+                                    <rect key="frame" x="0.0" y="111" width="382" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-EB-m5a">
+                                    <rect key="frame" x="0.0" y="167" width="382" height="45.5"/>
+                                    <state key="normal" title="Go To Website">
+                                        <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapGoToWebsite:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZSZ-Tf-5s6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-dL-6ML">
+                                    <rect key="frame" x="0.0" y="222.5" width="382" height="45.5"/>
+                                    <state key="normal" title="Top 3 Reviews">
+                                        <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapTopReviews:" destination="iN0-l3-epB" eventType="touchUpInside" id="4eR-cL-8ZI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rPc-V2-Hcg" firstAttribute="top" secondItem="JHU-1D-vqU" secondAttribute="top" constant="16" id="8tC-M3-Rcz"/>
+                        <constraint firstAttribute="bottom" secondItem="rPc-V2-Hcg" secondAttribute="bottom" constant="16" id="C74-lj-8P1"/>
+                        <constraint firstItem="rPc-V2-Hcg" firstAttribute="leading" secondItem="JHU-1D-vqU" secondAttribute="leading" constant="16" id="ITJ-6i-brL"/>
+                        <constraint firstAttribute="trailing" secondItem="rPc-V2-Hcg" secondAttribute="trailing" constant="16" id="zKm-9Q-FqW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JHU-1D-vqU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2Tj-KI-7jA"/>
+                <constraint firstItem="JHU-1D-vqU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AAX-yp-w06"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JHU-1D-vqU" secondAttribute="trailing" id="eOA-MJ-fsq"/>
+                <constraint firstItem="JHU-1D-vqU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="o7R-YS-i9g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="businessNameLabel" destination="KCL-WE-PVr" id="RU5-ao-upE"/>
+                <outlet property="ratingLabel" destination="2Y5-d6-QwW" id="1IM-PS-dyl"/>
+                <outlet property="totalReviewsLabel" destination="hKC-PW-DIc" id="kZm-Bx-sXz"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-35.491071428571423"/>
+        </view>
+    </objects>
+</document>

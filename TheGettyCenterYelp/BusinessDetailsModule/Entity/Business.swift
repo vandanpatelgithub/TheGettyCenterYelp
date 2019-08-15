@@ -17,6 +17,7 @@ struct Business: Codable {
     let location: BusinessLocation
     let photos: [String]
     let hours: [BusinessHours]
+    let totalReviews: Int
     
     private enum CodingKeys: String, CodingKey {
         case name
@@ -27,6 +28,7 @@ struct Business: Codable {
         case location
         case photos
         case hours
+        case totalReviews = "review_count"
     }
     
     func convertToUIModel() -> BusinessUIModel {
@@ -34,6 +36,7 @@ struct Business: Codable {
         return BusinessUIModel(
             name: self.name,
             imageURL: self.imageURL,
+            totalReviews: self.totalReviews,
             yelpURL: self.yelpURL,
             phoneNumber: self.phoneNumber,
             rating: self.rating,

@@ -35,12 +35,6 @@ class GCLandingPageVC: UIViewController, Storyboarded {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    func loadImageComponent() {
-        guard let imageComponent = ImageComponentBuilder.buildImageComponent(forBusiness: self.uiModel, andAPI: Router<YelpAPI>()) else { return }
-        imageComponent.presenter.loadBusinessImage()
-        stackView.addArrangedSubview(imageComponent)
-    }
-        
     func loadHoursComponent() {
         guard let hoursComponent = HoursComponentBuilder.buildHoursComponent(withHours: self.uiModel.hours) else { return }
         hoursComponent.presenter.loadData()
@@ -56,6 +50,12 @@ class GCLandingPageVC: UIViewController, Storyboarded {
         addressComponent.presenter.loadData()
         stackView.addArrangedSubview(addressComponent)
     }
+    
+    func loadNameComponent() {
+        guard let nameComponent = NameComponentBuilder.buildNameComponent(withBusiness: self.uiModel) else { return }
+        nameComponent.presenter.loadNameComponent()
+        stackView.addArrangedSubview(nameComponent)
+    }
 }
 
 extension GCLandingPageVC: GCLandingPageViewable {
@@ -63,7 +63,7 @@ extension GCLandingPageVC: GCLandingPageViewable {
         guard let uiModel = model else { return }
         self.uiModel = uiModel
         DispatchQueue.main.async {
-            self.loadImageComponent()
+            self.loadNameComponent()
             self.loadHoursComponent()
             self.loadAddressComponent()
         }
