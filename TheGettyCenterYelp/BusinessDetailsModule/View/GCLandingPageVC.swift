@@ -53,6 +53,7 @@ class GCLandingPageVC: UIViewController, Storyboarded {
     
     func loadNameComponent() {
         guard let nameComponent = NameComponentBuilder.buildNameComponent(withBusiness: self.uiModel) else { return }
+        nameComponent.presenter.delegate = self.presenter
         nameComponent.presenter.loadNameComponent()
         stackView.addArrangedSubview(nameComponent)
     }

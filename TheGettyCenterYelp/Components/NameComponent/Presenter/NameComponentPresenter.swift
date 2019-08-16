@@ -11,11 +11,19 @@ import UIKit
 protocol NameComponentPresentable: class {
     func loadNameComponent()
     func didTapGoToWebsite()
+    func didTapTopReviews()
+    
+    var delegate: NameComponentPresenterDelegate? { get set }
+}
+
+protocol NameComponentPresenterDelegate: class {
+    func didTapTopReviews()
 }
 
 class NameComponentPresenter {
     let view: NameComponentViewable
     let business: BusinessUIModel
+    weak var delegate: NameComponentPresenterDelegate?
     
     init(view: NameComponentViewable, business: BusinessUIModel) {
         self.view = view
@@ -24,6 +32,10 @@ class NameComponentPresenter {
 }
 
 extension NameComponentPresenter: NameComponentPresentable {
+    func didTapTopReviews() {
+        delegate?.didTapTopReviews()
+    }
+    
     func didTapGoToWebsite() {
         openUrl(urlString: self.business.yelpURL)
     }

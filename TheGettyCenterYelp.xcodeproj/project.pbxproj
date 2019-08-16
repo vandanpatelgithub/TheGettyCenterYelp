@@ -69,6 +69,8 @@
 		2BCF99F9230453D700A320E3 /* NameComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF99F8230453D700A320E3 /* NameComponentBuilder.swift */; };
 		2BCF99FF2305046300A320E3 /* NameComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */; };
 		2BCF9A01230504C600A320E3 /* NameComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */; };
+		2BCF9A0623064F7100A320E3 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A0523064F7100A320E3 /* ReviewsTableViewController.swift */; };
+		2BCF9A092306555100A320E3 /* ReviewsTableViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
 		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
@@ -150,6 +152,8 @@
 		2BCF99F8230453D700A320E3 /* NameComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentBuilder.swift; sourceTree = "<group>"; };
 		2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentViewMock.swift; sourceTree = "<group>"; };
 		2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentPresenterTests.swift; sourceTree = "<group>"; };
+		2BCF9A0523064F7100A320E3 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewRouter.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -425,6 +429,7 @@
 				2B176F2E22FF1164003BFE14 /* Components */,
 				2B176F0422FD1051003BFE14 /* Network Layer */,
 				2BB1FE7822F9342F006FAAE5 /* BusinessDetailsModule */,
+				2BCF9A0323064F1B00A320E3 /* ReviewsModule */,
 				2BB1FE7122F930FB006FAAE5 /* Utilities */,
 				2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */,
 				2BB1FE5522F93056006FAAE5 /* Main.storyboard */,
@@ -554,6 +559,31 @@
 				2BCF99FE2305046300A320E3 /* NameComponentViewMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2BCF9A0323064F1B00A320E3 /* ReviewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF9A072306553C00A320E3 /* Router */,
+				2BCF9A0423064F5200A320E3 /* View */,
+			);
+			path = ReviewsModule;
+			sourceTree = "<group>";
+		};
+		2BCF9A0423064F5200A320E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF9A0523064F7100A320E3 /* ReviewsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BCF9A072306553C00A320E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2BFDF95B22FA856900E08659 /* Utilities */ = {
@@ -697,6 +727,7 @@
 				2BCF99F22304519800A320E3 /* NameComponentView.swift in Sources */,
 				2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */,
 				2B176F0822FD10C3003BFE14 /* HTTPMethod.swift in Sources */,
+				2BCF9A0623064F7100A320E3 /* ReviewsTableViewController.swift in Sources */,
 				2B1AD2B3230090C5007892BC /* PhoneComponentCell.swift in Sources */,
 				2B176F1722FD1FB9003BFE14 /* NetworkManager.swift in Sources */,
 				2B176F3D22FF2020003BFE14 /* HoursCell.swift in Sources */,
@@ -706,6 +737,7 @@
 				2B176F2A22FE6FEE003BFE14 /* BusinessHoursUIModel.swift in Sources */,
 				2B176F1A22FD2859003BFE14 /* GCLandingPageVC.swift in Sources */,
 				2B176F2122FD2D05003BFE14 /* GCLandingPagePresenter.swift in Sources */,
+				2BCF9A092306555100A320E3 /* ReviewsTableViewRouter.swift in Sources */,
 				2B176F6322FFD099003BFE14 /* AddressComponentCell.swift in Sources */,
 				2BCF99F9230453D700A320E3 /* NameComponentBuilder.swift in Sources */,
 				2B176F3222FF11A2003BFE14 /* HoursComponentView.swift in Sources */,

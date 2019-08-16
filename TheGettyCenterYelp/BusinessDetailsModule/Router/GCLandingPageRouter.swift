@@ -10,6 +10,9 @@ import UIKit
 
 protocol GCLandingPageRoutable: class {
     func start(withAPI api: Router<YelpAPI>)
+    func goToReviewsTableView(withAPI api: Router<YelpAPI>)
+    
+    var reviewsRouter: ReviewsTableViewRoutable { get }
 }
 
 class GCLandingPageRouter {
@@ -22,7 +25,7 @@ class GCLandingPageRouter {
     
     private func initializeBusinessDetailModule(withAPI api: Router<YelpAPI>) -> GCLandingPageVC {
         let landingPageVC = GCLandingPageVC.instantiate()
-        let presenter = GCLandingPagePresenter(view: landingPageVC)
+        let presenter = GCLandingPagePresenter(view: landingPageVC, router: self, api: api)
         let interactor = GCLandingPageInteractor(networkManager: NetworkManager(router: api), presenter: presenter)
         landingPageVC.presenter = presenter
         presenter.interactor = interactor
@@ -31,8 +34,16 @@ class GCLandingPageRouter {
 }
 
 extension GCLandingPageRouter: GCLandingPageRoutable {
+    var reviewsRouter: ReviewsTableViewRoutable {
+        return ReviewsTableViewRouter(navigationController: self.navigationController)
+    }
+    
     func start(withAPI api: Router<YelpAPI>) {
         let vc = initializeBusinessDetailModule(withAPI: api)
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func goToReviewsTableView(withAPI api: Router<YelpAPI>) {
+        reviewsRouter.start(withAPI: api)
     }
 }

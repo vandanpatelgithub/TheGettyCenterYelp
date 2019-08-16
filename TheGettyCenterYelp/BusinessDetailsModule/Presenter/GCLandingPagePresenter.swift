@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol GCLandingPagePresentable: class {
+protocol GCLandingPagePresentable: NameComponentPresenterDelegate {
     func onViewDidLoad()
     func didGetBusinessDetails(withResult result: Result<Business, Error>)
     
@@ -17,10 +17,14 @@ protocol GCLandingPagePresentable: class {
 
 class GCLandingPagePresenter {
     let view: GCLandingPageViewable
+    let router: GCLandingPageRoutable
+    let api: Router<YelpAPI>
     var interactor: GCLandingPageInteractable!
     
-    init(view: GCLandingPageViewable) {
+    init(view: GCLandingPageViewable, router: GCLandingPageRoutable, api: Router<YelpAPI>) {
         self.view = view
+        self.router = router
+        self.api = api
     }
 }
 
@@ -36,5 +40,11 @@ extension GCLandingPagePresenter: GCLandingPagePresentable {
     
     func onViewDidLoad() {
         interactor.getDetailsForBusiness(withID: "zRlDhJgcwXEphTUhMaCfyw")
+    }
+}
+
+extension GCLandingPagePresenter: NameComponentPresenterDelegate {
+    func didTapTopReviews() {
+        router.goToReviewsTableView(withAPI: self.api)
     }
 }

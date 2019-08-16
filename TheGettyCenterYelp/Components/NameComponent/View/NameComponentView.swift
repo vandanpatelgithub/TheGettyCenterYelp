@@ -31,6 +31,7 @@ class NameComponentView: UIView {
     }
     
     @IBAction func didTapTopReviews(_ sender: UIButton) {
+        presenter.didTapTopReviews()
     }
 }
 
