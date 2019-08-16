@@ -71,6 +71,11 @@
 		2BCF9A01230504C600A320E3 /* NameComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */; };
 		2BCF9A0623064F7100A320E3 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A0523064F7100A320E3 /* ReviewsTableViewController.swift */; };
 		2BCF9A092306555100A320E3 /* ReviewsTableViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */; };
+		2BCF9A0B23065D4100A320E3 /* TopReviewsMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF9A0A23065D4100A320E3 /* TopReviewsMockResponse.json */; };
+		2BCF9A0E23065DB700A320E3 /* BusinessReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A0D23065DB700A320E3 /* BusinessReviews.swift */; };
+		2BCF9A1023065DED00A320E3 /* BusinessReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A0F23065DED00A320E3 /* BusinessReview.swift */; };
+		2BCF9A1223065E5500A320E3 /* BusinessUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A1123065E5500A320E3 /* BusinessUser.swift */; };
+		2BCF9A1423065EE800A320E3 /* BusinessReviewsDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
 		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
@@ -154,6 +159,11 @@
 		2BCF9A00230504C600A320E3 /* NameComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponentPresenterTests.swift; sourceTree = "<group>"; };
 		2BCF9A0523064F7100A320E3 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
 		2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewRouter.swift; sourceTree = "<group>"; };
+		2BCF9A0A23065D4100A320E3 /* TopReviewsMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopReviewsMockResponse.json; sourceTree = "<group>"; };
+		2BCF9A0D23065DB700A320E3 /* BusinessReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessReviews.swift; sourceTree = "<group>"; };
+		2BCF9A0F23065DED00A320E3 /* BusinessReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessReview.swift; sourceTree = "<group>"; };
+		2BCF9A1123065E5500A320E3 /* BusinessUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessUser.swift; sourceTree = "<group>"; };
+		2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessReviewsDeserializationTests.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -471,6 +481,7 @@
 				2BB1FE7522F933F9006FAAE5 /* GettyCenterBusinessDetailsMock.json */,
 				2B176EEE22FBB99F003BFE14 /* BusinessHoursMockResponse.json */,
 				2B176EFE22FBBD8C003BFE14 /* BusinessLocationMockResponse.json */,
+				2BCF9A0A23065D4100A320E3 /* TopReviewsMockResponse.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -481,6 +492,7 @@
 				2B176EFA22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift */,
 				2B176F0022FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift */,
 				2B176F0222FBC99A003BFE14 /* BusinessDeserializationTests.swift */,
+				2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */,
 			);
 			path = Deserialization;
 			sourceTree = "<group>";
@@ -564,6 +576,7 @@
 		2BCF9A0323064F1B00A320E3 /* ReviewsModule */ = {
 			isa = PBXGroup;
 			children = (
+				2BCF9A0C23065DA400A320E3 /* Entity */,
 				2BCF9A072306553C00A320E3 /* Router */,
 				2BCF9A0423064F5200A320E3 /* View */,
 			);
@@ -584,6 +597,16 @@
 				2BCF9A082306555100A320E3 /* ReviewsTableViewRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2BCF9A0C23065DA400A320E3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF9A0D23065DB700A320E3 /* BusinessReviews.swift */,
+				2BCF9A0F23065DED00A320E3 /* BusinessReview.swift */,
+				2BCF9A1123065E5500A320E3 /* BusinessUser.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		2BFDF95B22FA856900E08659 /* Utilities */ = {
@@ -694,6 +717,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCF9A0B23065D4100A320E3 /* TopReviewsMockResponse.json in Resources */,
 				2B176EF922FBBB35003BFE14 /* BusinessHoursMockResponse.json in Resources */,
 				2B176EF822FBBB31003BFE14 /* GettyCenterBusinessDetailsMock.json in Resources */,
 				2B176EFF22FBBD8C003BFE14 /* BusinessLocationMockResponse.json in Resources */,
@@ -712,9 +736,11 @@
 				2BB1FE7F22FA7695006FAAE5 /* BusinessHours.swift in Sources */,
 				2BCF99F6230452B700A320E3 /* NameComponentPresenter.swift in Sources */,
 				2B176F5A22FFCD2E003BFE14 /* AddressComponentView.swift in Sources */,
+				2BCF9A0E23065DB700A320E3 /* BusinessReviews.swift in Sources */,
 				2B176F5E22FFCEB0003BFE14 /* AddressComponentBuilder.swift in Sources */,
 				2B176F0622FD1081003BFE14 /* EndpointType.swift in Sources */,
 				2B176F2322FD2D78003BFE14 /* GCLandingPageInteractor.swift in Sources */,
+				2BCF9A1023065DED00A320E3 /* BusinessReview.swift in Sources */,
 				2B176F2522FE6B0C003BFE14 /* OpeningHoursUIModel.swift in Sources */,
 				2BB1FE8122FA7748006FAAE5 /* OpeningHours.swift in Sources */,
 				2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */,
@@ -723,6 +749,7 @@
 				2BB1FE7B22F9346E006FAAE5 /* Business.swift in Sources */,
 				2B176F0A22FD10EB003BFE14 /* HTTPTask.swift in Sources */,
 				2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */,
+				2BCF9A1223065E5500A320E3 /* BusinessUser.swift in Sources */,
 				2B176F1D22FD2C6F003BFE14 /* GCLandingPageRouter.swift in Sources */,
 				2BCF99F22304519800A320E3 /* NameComponentView.swift in Sources */,
 				2B176F1422FD1BC1003BFE14 /* YelpAPI.swift in Sources */,
@@ -752,6 +779,7 @@
 				2B176F4422FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift in Sources */,
 				2B176F4C22FFC66E003BFE14 /* GCLandingPageInteractorTests.swift in Sources */,
 				2BCF9A01230504C600A320E3 /* NameComponentPresenterTests.swift in Sources */,
+				2BCF9A1423065EE800A320E3 /* BusinessReviewsDeserializationTests.swift in Sources */,
 				2B176F4A22FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift in Sources */,
 				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
 				2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */,

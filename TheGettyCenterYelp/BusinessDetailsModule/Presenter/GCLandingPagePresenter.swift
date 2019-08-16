@@ -17,11 +17,11 @@ protocol GCLandingPagePresentable: NameComponentPresenterDelegate {
 
 class GCLandingPagePresenter {
     let view: GCLandingPageViewable
-    let router: GCLandingPageRoutable
-    let api: Router<YelpAPI>
+    var router: GCLandingPageRoutable?
+    var api: Router<YelpAPI>?
     var interactor: GCLandingPageInteractable!
     
-    init(view: GCLandingPageViewable, router: GCLandingPageRoutable, api: Router<YelpAPI>) {
+    init(view: GCLandingPageViewable, router: GCLandingPageRoutable? = nil, api: Router<YelpAPI>? = nil) {
         self.view = view
         self.router = router
         self.api = api
@@ -45,6 +45,7 @@ extension GCLandingPagePresenter: GCLandingPagePresentable {
 
 extension GCLandingPagePresenter: NameComponentPresenterDelegate {
     func didTapTopReviews() {
-        router.goToReviewsTableView(withAPI: self.api)
+        guard let router = self.router, let api = self.api else { return }
+        router.goToReviewsTableView(withAPI: api)
     }
 }

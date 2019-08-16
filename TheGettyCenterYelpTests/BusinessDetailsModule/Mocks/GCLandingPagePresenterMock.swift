@@ -14,6 +14,7 @@ class GCLandingPagePresenterMock: GCLandingPagePresentable {
     var numberOfTimesOnViewDidLoadCalled = 0
     var numberOfTimesGetBusinessDetailsCalled = 0
     var business: Business?
+    var numberOfTimesDidTapTopReviewsCalled = 0
     
     func onViewDidLoad() {
         numberOfTimesOnViewDidLoadCalled += 1
@@ -29,5 +30,7 @@ class GCLandingPagePresenterMock: GCLandingPagePresentable {
         }
     }
     
-    
+    func didTapTopReviews() {
+        numberOfTimesDidTapTopReviewsCalled += 1
+    }
 }

@@ -1,0 +1,52 @@
+{
+    "reviews": [
+        {
+            "id": "E6zb5GVB57XvmTNJnAgBUQ",
+            "url": "https://www.yelp.com/biz/the-getty-center-los-angeles-6?adjust_creative=o3bME_zlxP4Xqr0AVy9eqQ&hrid=E6zb5GVB57XvmTNJnAgBUQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=o3bME_zlxP4Xqr0AVy9eqQ",
+            "text": "It takes a while to trek all the way up here, but for the free admission and the amount of things to see, I think it's pretty worth it. Once you get in from...",
+            "rating": 5,
+            "time_created": "2019-08-10 12:52:01",
+            "user": {
+                "id": "o_oDHtflOmzr4-0xGoEW_g",
+                "profile_url": "https://www.yelp.com/user_details?userid=o_oDHtflOmzr4-0xGoEW_g",
+                "image_url": "https://s3-media2.fl.yelpcdn.com/photo/B5mpwDrbLuw5-F6UMxxjSw/o.jpg",
+                "name": "Lesie H."
+            }
+        },
+        {
+            "id": "ctKG6W20y9VfiZrVlQuL9A",
+            "url": "https://www.yelp.com/biz/the-getty-center-los-angeles-6?adjust_creative=o3bME_zlxP4Xqr0AVy9eqQ&hrid=ctKG6W20y9VfiZrVlQuL9A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=o3bME_zlxP4Xqr0AVy9eqQ",
+            "text": "If for no other reason than the architecture and venue you need to visit the Getty Center, the artworks are the bonus!\n\nThis place is tremendous, we took an...",
+            "rating": 5,
+            "time_created": "2019-08-07 08:50:55",
+            "user": {
+                "id": "xiUiSaEz6JxhcUfrFndamw",
+                "profile_url": "https://www.yelp.com/user_details?userid=xiUiSaEz6JxhcUfrFndamw",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/M9i4ZGLnMBmIBkvJ0UJ-XA/o.jpg",
+                "name": "Jeffrey C."
+            }
+        },
+        {
+            "id": "1f734Jtwj625NgFLKU0I9w",
+            "url": "https://www.yelp.com/biz/the-getty-center-los-angeles-6?adjust_creative=o3bME_zlxP4Xqr0AVy9eqQ&hrid=1f734Jtwj625NgFLKU0I9w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=o3bME_zlxP4Xqr0AVy9eqQ",
+            "text": "I recommend you visit this place during a cool clear sunny day or a warm clear night. Under those conditions, you get to enjoy and get photo opportunity of...",
+            "rating": 4,
+            "time_created": "2019-08-02 14:24:28",
+            "user": {
+                "id": "SReCa-U5XLbCsDc-N0oGPA",
+                "profile_url": "https://www.yelp.com/user_details?userid=SReCa-U5XLbCsDc-N0oGPA",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/vHgWMT-WrO5RtI21_GYYqQ/o.jpg",
+                "name": "Ko T."
+            }
+        }
+    ],
+    "total": 3083,
+    "possible_languages": [
+        "fr",
+        "en",
+        "pt",
+        "de",
+        "tr",
+        "ja"
+    ]
+}
