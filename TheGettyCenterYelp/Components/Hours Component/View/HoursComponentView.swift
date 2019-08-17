@@ -31,6 +31,7 @@ class HoursComponentView: UIView {
                            forCellReuseIdentifier: HoursComponentViewConstants.cellID.rawValue)
         tableView.tableFooterView = UIView()
         containerView.dropShadow()
+        tableView.layer.cornerRadius = 5.0
     }
     
     private func populateCell(_ indexPath: IndexPath, _ cell: HoursCell) {

@@ -79,3 +79,20 @@ extension UIView {
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
+
+extension UIViewController {
+    func showActivity(child: SpinnerViewController) {
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
+    
+    func hideActivity(child: SpinnerViewController) {
+        if children.contains(child) {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
+}

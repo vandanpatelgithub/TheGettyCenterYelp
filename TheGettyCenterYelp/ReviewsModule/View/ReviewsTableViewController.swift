@@ -17,11 +17,17 @@ class ReviewsTableViewController: UITableViewController, Storyboarded {
     let reuseIdentifier = "reviewsCell"
     var presenter: ReviewsTableViewPresenter!
     var businessReviews = [BusinessReview]()
+    let spinner = SpinnerViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         title = "Reviews"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showActivity(child: spinner)
     }
 
     // MARK: - Table view data source
@@ -42,6 +48,9 @@ class ReviewsTableViewController: UITableViewController, Storyboarded {
 extension ReviewsTableViewController: ReviewsTableViewable {
     func display(reviews: [BusinessReview]) {
         self.businessReviews = reviews
-        DispatchQueue.main.async { self.tableView.reloadData() }
+        DispatchQueue.main.async {
+            self.hideActivity(child: self.spinner)
+            self.tableView.reloadData()
+        }
     }
 }

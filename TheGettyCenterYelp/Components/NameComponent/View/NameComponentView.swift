@@ -24,6 +24,7 @@ class NameComponentView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         containerView.dropShadow()
+        containerView.layer.cornerRadius = 5.0
     }
     
     @IBAction func didTapGoToWebsite(_ sender: UIButton) {

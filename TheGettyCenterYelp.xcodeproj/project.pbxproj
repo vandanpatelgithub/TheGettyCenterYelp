@@ -79,6 +79,7 @@
 		2BCF9A1223065E5500A320E3 /* BusinessUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A1123065E5500A320E3 /* BusinessUser.swift */; };
 		2BCF9A1423065EE800A320E3 /* BusinessReviewsDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */; };
 		2BE6849C2307AFFD000E6914 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6849B2307AFFD000E6914 /* ReviewCell.swift */; };
+		2BE6849E230851C9000E6914 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6849D230851C9000E6914 /* SpinnerViewController.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
 		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
@@ -170,6 +171,7 @@
 		2BCF9A1123065E5500A320E3 /* BusinessUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessUser.swift; sourceTree = "<group>"; };
 		2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessReviewsDeserializationTests.swift; sourceTree = "<group>"; };
 		2BE6849B2307AFFD000E6914 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		2BE6849D230851C9000E6914 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -493,6 +495,7 @@
 			children = (
 				2BB1FE7222F93119006FAAE5 /* Storyboarded.swift */,
 				2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */,
+				2BE6849D230851C9000E6914 /* SpinnerViewController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -796,6 +799,7 @@
 				2B176F6322FFD099003BFE14 /* AddressComponentCell.swift in Sources */,
 				2BCF99F9230453D700A320E3 /* NameComponentBuilder.swift in Sources */,
 				2B176F3222FF11A2003BFE14 /* HoursComponentView.swift in Sources */,
+				2BE6849E230851C9000E6914 /* SpinnerViewController.swift in Sources */,
 				2B176F1222FD12E4003BFE14 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,7 @@ class ReviewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        containerView.layer.cornerRadius = 5.0
         containerView.dropShadow()
         separatorInset = UIEdgeInsets(top: 0, left: frame.width, bottom: 0, right: 0)
     }

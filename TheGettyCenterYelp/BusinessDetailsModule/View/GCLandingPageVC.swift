@@ -18,11 +18,12 @@ class GCLandingPageVC: UIViewController, Storyboarded {
     
     var presenter: GCLandingPagePresentable!
     var uiModel: BusinessUIModel!
+    let spinner = SpinnerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.onViewDidLoad()
-        title = "The Getty Center"
+        showActivity(child: spinner)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,6 +65,7 @@ extension GCLandingPageVC: GCLandingPageViewable {
         guard let uiModel = model else { return }
         self.uiModel = uiModel
         DispatchQueue.main.async {
+            self.hideActivity(child: self.spinner)
             self.loadNameComponent()
             self.loadHoursComponent()
             self.loadAddressComponent()
