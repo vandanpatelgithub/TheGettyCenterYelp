@@ -58,6 +58,13 @@ class GCLandingPageVC: UIViewController, Storyboarded {
         nameComponent.presenter.loadNameComponent()
         stackView.addArrangedSubview(nameComponent)
     }
+    
+    func animateStackView() {
+        stackView.transform = CGAffineTransform(translationX: -view.frame.width, y: 0)
+        UIView.animate(withDuration: 0.5) { [weak self] in
+            self?.stackView.transform = .identity
+        }
+    }
 }
 
 extension GCLandingPageVC: GCLandingPageViewable {
@@ -66,6 +73,7 @@ extension GCLandingPageVC: GCLandingPageViewable {
         self.uiModel = uiModel
         DispatchQueue.main.async {
             self.hideActivity(child: self.spinner)
+            self.animateStackView()
             self.loadNameComponent()
             self.loadHoursComponent()
             self.loadAddressComponent()

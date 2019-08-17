@@ -50,7 +50,7 @@ extension ReviewsTableViewController: ReviewsTableViewable {
         self.businessReviews = reviews
         DispatchQueue.main.async {
             self.hideActivity(child: self.spinner)
-            self.tableView.reloadData()
+            self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
         }
     }
 }
