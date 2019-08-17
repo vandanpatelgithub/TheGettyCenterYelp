@@ -96,3 +96,9 @@ extension UIViewController {
         }
     }
 }
+
+extension UITableView {
+    func reloadData(withAnimation animation: UITableView.RowAnimation) {
+        reloadSections(IndexSet(integersIn: 0 ..< numberOfSections), with: animation)
+    }
+}
