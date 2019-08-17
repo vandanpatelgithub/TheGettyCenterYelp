@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol ReviewsTableViewable: class {
+    func display(reviews: [BusinessReview])
+}
+
 class ReviewsTableViewController: UITableViewController, Storyboarded {
     
     let reuseIdentifier = "reviewsCell"
+    var presenter: ReviewsTableViewPresenter!
+    var businessReviews = [BusinessReview]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +27,21 @@ class ReviewsTableViewController: UITableViewController, Storyboarded {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 5
+        return self.businessReviews.count
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50.0
-    }
-    
+        
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? ReviewCell else {
+            return UITableViewCell()
+        }
+        cell.populateCell(withReview: self.businessReviews[indexPath.row])
         return cell
+    }
+}
+
+extension ReviewsTableViewController: ReviewsTableViewable {
+    func display(reviews: [BusinessReview]) {
+        self.businessReviews = reviews
+        DispatchQueue.main.async { self.tableView.reloadData() }
     }
 }

@@ -29,7 +29,18 @@ let mockBusiness = Business(name: "mockName",
                             hours: [],
                             totalReviews: 3000)
 
+let mockBusinessReviews = BusinessReviews(
+    reviews: [ BusinessReview(text: "", rating: 3.0, timeCreated: "", user: BusinessUser(name: "")) ])
+
 class NetworkManagerMock: NetworkManagable {
+    func getReviewsForBusiness(withID id: String, completion: @escaping (Result<BusinessReviews, Error>) -> ()) {
+        if id.isEmpty {
+            completion(.failure(MockError.invalidID))
+        } else {
+            completion(.success(mockBusinessReviews))
+        }
+    }
+    
     func getDetailsForBusiness(withID id: String, completion: @escaping (Result<Business, Error>) -> ()) {
         if id.isEmpty {
             completion(.failure(MockError.invalidID))

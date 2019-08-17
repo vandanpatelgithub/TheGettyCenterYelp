@@ -21,6 +21,10 @@ class ReviewsTableViewRouter {
     
     private func initializeReviewsModule(withAPI api: Router<YelpAPI>) -> ReviewsTableViewController {
         let reviewsTVC = ReviewsTableViewController.instantiate()
+        let presenter = ReviewsTableViewPresenter(view: reviewsTVC)
+        let interactor = ReviewsTableViewInteractor(presenter: presenter, networkManager: NetworkManager(router: api))
+        reviewsTVC.presenter = presenter
+        presenter.interactor = interactor
         return reviewsTVC
     }
 }
@@ -28,6 +32,7 @@ class ReviewsTableViewRouter {
 extension ReviewsTableViewRouter: ReviewsTableViewRoutable {
     func start(withAPI api: Router<YelpAPI>) {
         let tvc = initializeReviewsModule(withAPI: api)
+        tvc.presenter.loadReviews()
         navigationController.pushViewController(tvc, animated: true)
     }
 }
