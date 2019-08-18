@@ -11,6 +11,8 @@ import Foundation
 protocol ReviewsTableViewPresentable: class {
     func loadReviews()
     func didGetBusinessReviews(withResult result: Result<BusinessReviews, Error>)
+    
+    var interactor: ReviewsTableViewInteractable! { get set }
 }
 
 class ReviewsTableViewPresenter {

@@ -54,6 +54,8 @@
 		2B1AD2B4230090C5007892BC /* PhoneComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */; };
 		2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */; };
 		2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */; };
+		2B5A94CA2309078C00679038 /* ReviewsTableViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A94C92309078C00679038 /* ReviewsTableViewInteractorTests.swift */; };
+		2B5A94CC2309080900679038 /* ReviewsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A94CB2309080900679038 /* ReviewsPresenterMock.swift */; };
 		2B7374192307A90C003DADB3 /* ReviewsTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7374182307A90C003DADB3 /* ReviewsTableViewPresenter.swift */; };
 		2B73741C2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73741B2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
@@ -80,6 +82,9 @@
 		2BCF9A1423065EE800A320E3 /* BusinessReviewsDeserializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */; };
 		2BE6849C2307AFFD000E6914 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6849B2307AFFD000E6914 /* ReviewCell.swift */; };
 		2BE6849E230851C9000E6914 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6849D230851C9000E6914 /* SpinnerViewController.swift */; };
+		2BE684A42308F9C4000E6914 /* ReviewsModuleViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE684A32308F9C4000E6914 /* ReviewsModuleViewMock.swift */; };
+		2BE684A62308FA64000E6914 /* ReviewsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE684A52308FA64000E6914 /* ReviewsInteractorMock.swift */; };
+		2BE684A82308FAE3000E6914 /* ReviewsTableViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE684A72308FAE3000E6914 /* ReviewsTableViewPresenterTests.swift */; };
 		2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */; };
 		2BFDF95F22FA85C900E08659 /* Extensions+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */; };
 /* End PBXBuildFile section */
@@ -141,6 +146,8 @@
 		2B1AD2B2230090C5007892BC /* PhoneComponentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneComponentCell.xib; sourceTree = "<group>"; };
 		2B1AD2B9230112A4007892BC /* AddressComponentViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentViewMock.swift; sourceTree = "<group>"; };
 		2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenterTests.swift; sourceTree = "<group>"; };
+		2B5A94C92309078C00679038 /* ReviewsTableViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewInteractorTests.swift; sourceTree = "<group>"; };
+		2B5A94CB2309080900679038 /* ReviewsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsPresenterMock.swift; sourceTree = "<group>"; };
 		2B7374182307A90C003DADB3 /* ReviewsTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewPresenter.swift; sourceTree = "<group>"; };
 		2B73741B2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewInteractor.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +179,9 @@
 		2BCF9A1323065EE800A320E3 /* BusinessReviewsDeserializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessReviewsDeserializationTests.swift; sourceTree = "<group>"; };
 		2BE6849B2307AFFD000E6914 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		2BE6849D230851C9000E6914 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		2BE684A32308F9C4000E6914 /* ReviewsModuleViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsModuleViewMock.swift; sourceTree = "<group>"; };
+		2BE684A52308FA64000E6914 /* ReviewsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsInteractorMock.swift; sourceTree = "<group>"; };
+		2BE684A72308FAE3000E6914 /* ReviewsTableViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewPresenterTests.swift; sourceTree = "<group>"; };
 		2BFDF95C22FA858000E08659 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		2BFDF95E22FA85C900E08659 /* Extensions+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -477,6 +487,7 @@
 		2BB1FE6522F93059006FAAE5 /* TheGettyCenterYelpTests */ = {
 			isa = PBXGroup;
 			children = (
+				2BE6849F2308F97C000E6914 /* ReviewsModule */,
 				2BCF99FA2305043200A320E3 /* NameComponent */,
 				2B1AD2B523011201007892BC /* AddressComponent */,
 				2B176F4D22FFC8EA003BFE14 /* HoursComponent */,
@@ -635,6 +646,26 @@
 				2BCF9A1123065E5500A320E3 /* BusinessUser.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		2BE6849F2308F97C000E6914 /* ReviewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2BE684A02308F98F000E6914 /* Mocks */,
+				2BE684A72308FAE3000E6914 /* ReviewsTableViewPresenterTests.swift */,
+				2B5A94C92309078C00679038 /* ReviewsTableViewInteractorTests.swift */,
+			);
+			path = ReviewsModule;
+			sourceTree = "<group>";
+		};
+		2BE684A02308F98F000E6914 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE684A32308F9C4000E6914 /* ReviewsModuleViewMock.swift */,
+				2BE684A52308FA64000E6914 /* ReviewsInteractorMock.swift */,
+				2B5A94CB2309080900679038 /* ReviewsPresenterMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		2BFDF95B22FA856900E08659 /* Utilities */ = {
@@ -814,10 +845,14 @@
 				2BCF9A1423065EE800A320E3 /* BusinessReviewsDeserializationTests.swift in Sources */,
 				2B176F4A22FFC0C7003BFE14 /* GCLandingPagePresenterTests.swift in Sources */,
 				2B176EFB22FBBB7A003BFE14 /* BunsinessHoursDeserializationTests.swift in Sources */,
+				2BE684A62308FA64000E6914 /* ReviewsInteractorMock.swift in Sources */,
 				2B176F4622FFBEA8003BFE14 /* NetworkManagerMock.swift in Sources */,
 				2BCF99FF2305046300A320E3 /* NameComponentViewMock.swift in Sources */,
 				2B176F0322FBC99A003BFE14 /* BusinessDeserializationTests.swift in Sources */,
+				2BE684A82308FAE3000E6914 /* ReviewsTableViewPresenterTests.swift in Sources */,
+				2B5A94CC2309080900679038 /* ReviewsPresenterMock.swift in Sources */,
 				2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */,
+				2BE684A42308F9C4000E6914 /* ReviewsModuleViewMock.swift in Sources */,
 				2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */,
 				2B176F4822FFC053003BFE14 /* GCLandingPageInteractorMock.swift in Sources */,
 				2B176F2D22FE7BB8003BFE14 /* UIEntityConversionTests.swift in Sources */,
@@ -827,6 +862,7 @@
 				2B176F5422FFC9B9003BFE14 /* HoursComponentPresenterTests.swift in Sources */,
 				2B176EF522FBBA9C003BFE14 /* HelperFunctionsTests.swift in Sources */,
 				2B176F5022FFC904003BFE14 /* HoursComponentViewMock.swift in Sources */,
+				2B5A94CA2309078C00679038 /* ReviewsTableViewInteractorTests.swift in Sources */,
 				2B176EF322FBBA88003BFE14 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
