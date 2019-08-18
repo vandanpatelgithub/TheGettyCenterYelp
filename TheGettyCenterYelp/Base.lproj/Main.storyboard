@@ -18,19 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvC-p3-37h">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvC-p3-37h">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-cd-Aeq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-cd-Aeq">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="FWg-cd-Aeq" firstAttribute="centerY" secondItem="lvC-p3-37h" secondAttribute="centerY" id="Cxt-Lh-YcR"/>
+                                    <constraint firstItem="FWg-cd-Aeq" firstAttribute="width" secondItem="lvC-p3-37h" secondAttribute="width" id="Fei-mg-xfx"/>
                                     <constraint firstAttribute="trailing" secondItem="FWg-cd-Aeq" secondAttribute="trailing" id="HXy-9b-aUp"/>
                                     <constraint firstAttribute="bottom" secondItem="FWg-cd-Aeq" secondAttribute="bottom" id="Z06-Iw-NFR"/>
                                     <constraint firstItem="FWg-cd-Aeq" firstAttribute="top" secondItem="lvC-p3-37h" secondAttribute="top" id="ePI-e6-grX"/>
-                                    <constraint firstItem="FWg-cd-Aeq" firstAttribute="centerX" secondItem="lvC-p3-37h" secondAttribute="centerX" id="elS-ZC-7MO"/>
                                     <constraint firstItem="FWg-cd-Aeq" firstAttribute="leading" secondItem="lvC-p3-37h" secondAttribute="leading" id="xGW-wW-jdC"/>
                                 </constraints>
                             </scrollView>
