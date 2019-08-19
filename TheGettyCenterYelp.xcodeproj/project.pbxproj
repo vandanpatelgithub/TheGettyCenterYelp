@@ -56,6 +56,7 @@
 		2B1AD2BC2301136D007892BC /* AddressComponentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */; };
 		2B5A94CA2309078C00679038 /* ReviewsTableViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A94C92309078C00679038 /* ReviewsTableViewInteractorTests.swift */; };
 		2B5A94CC2309080900679038 /* ReviewsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A94CB2309080900679038 /* ReviewsPresenterMock.swift */; };
+		2B5A94CE230A4B8800679038 /* GCLandingPageRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A94CD230A4B8800679038 /* GCLandingPageRouterMock.swift */; };
 		2B7374192307A90C003DADB3 /* ReviewsTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7374182307A90C003DADB3 /* ReviewsTableViewPresenter.swift */; };
 		2B73741C2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73741B2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift */; };
 		2BB1FE5222F93056006FAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1FE5122F93056006FAAE5 /* AppDelegate.swift */; };
@@ -148,6 +149,7 @@
 		2B1AD2BB2301136D007892BC /* AddressComponentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressComponentPresenterTests.swift; sourceTree = "<group>"; };
 		2B5A94C92309078C00679038 /* ReviewsTableViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewInteractorTests.swift; sourceTree = "<group>"; };
 		2B5A94CB2309080900679038 /* ReviewsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsPresenterMock.swift; sourceTree = "<group>"; };
+		2B5A94CD230A4B8800679038 /* GCLandingPageRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCLandingPageRouterMock.swift; sourceTree = "<group>"; };
 		2B7374182307A90C003DADB3 /* ReviewsTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewPresenter.swift; sourceTree = "<group>"; };
 		2B73741B2307AA9C003DADB3 /* ReviewsTableViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewInteractor.swift; sourceTree = "<group>"; };
 		2BB1FE4E22F93056006FAAE5 /* TheGettyCenterYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGettyCenterYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +358,7 @@
 				2B176F4322FFBDEC003BFE14 /* GCLandingPagePresenterMock.swift */,
 				2B176F4522FFBEA8003BFE14 /* NetworkManagerMock.swift */,
 				2B176F4722FFC053003BFE14 /* GCLandingPageInteractorMock.swift */,
+				2B5A94CD230A4B8800679038 /* GCLandingPageRouterMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -856,6 +859,7 @@
 				2B1AD2BA230112A4007892BC /* AddressComponentViewMock.swift in Sources */,
 				2B176F4822FFC053003BFE14 /* GCLandingPageInteractorMock.swift in Sources */,
 				2B176F2D22FE7BB8003BFE14 /* UIEntityConversionTests.swift in Sources */,
+				2B5A94CE230A4B8800679038 /* GCLandingPageRouterMock.swift in Sources */,
 				2B176F4222FFBD79003BFE14 /* GCLandingPageVCMock.swift in Sources */,
 				2B176F0122FBBDAA003BFE14 /* BusinessLocationDeserializationTests.swift in Sources */,
 				2BFDF95D22FA858000E08659 /* UtilitiesTests.swift in Sources */,

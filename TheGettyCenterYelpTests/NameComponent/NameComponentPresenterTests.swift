@@ -14,6 +14,7 @@ class NameComponentPresenterTests: XCTestCase {
     
     var presenter: NameComponentPresentable?
     let view = NameComponentViewMock()
+    var numberOfTimesDidTapTopReviewsCalled = 0
     
     let mockBusinessUIModel = BusinessUIModel(name: "",
                                               imageURL: "",
@@ -34,6 +35,7 @@ class NameComponentPresenterTests: XCTestCase {
     override func setUp() {
         super.setUp()
         presenter = NameComponentPresenter(view: view, business: mockBusinessUIModel)
+        presenter?.delegate = self
     }
 
     override func tearDown() {
@@ -53,5 +55,16 @@ class NameComponentPresenterTests: XCTestCase {
             return 
         }
         XCTAssertEqual(business, mockBusinessUIModel)
+    }
+    
+    func testDidTapTopReviews() {
+        presenter?.didTapTopReviews()
+        XCTAssertEqual(numberOfTimesDidTapTopReviewsCalled, 1)
+    }
+}
+
+extension NameComponentPresenterTests: NameComponentPresenterDelegate {
+    func didTapTopReviews() {
+        numberOfTimesDidTapTopReviewsCalled += 1
     }
 }

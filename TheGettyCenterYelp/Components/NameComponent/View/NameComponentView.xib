@@ -42,8 +42,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-EB-m5a">
                                     <rect key="frame" x="0.0" y="154" width="350" height="46.5"/>
+                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                     <state key="normal" title="Go To Website">
-                                        <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="didTapGoToWebsite:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZSZ-Tf-5s6"/>
@@ -51,8 +52,9 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-dL-6ML">
                                     <rect key="frame" x="0.0" y="205.5" width="350" height="46.5"/>
+                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                     <state key="normal" title="Top 3 Reviews">
-                                        <color key="titleColor" red="1" green="0.35016681649999998" blue="0.34993072829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="didTapTopReviews:" destination="iN0-l3-epB" eventType="touchUpInside" id="4eR-cL-8ZI"/>

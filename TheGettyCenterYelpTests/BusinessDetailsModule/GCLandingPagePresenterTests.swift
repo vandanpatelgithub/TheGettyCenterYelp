@@ -14,10 +14,11 @@ class GCLandingPagePresenterTests: XCTestCase {
     var presenter: GCLandingPagePresentable?
     let view = GCLandingPageVCMock()
     let interactor = GCLandingPageInteractorMock()
+    let router = GCLandingPageRouterMock()
 
     override func setUp() {
         super.setUp()
-        presenter = GCLandingPagePresenter(view: view)
+        presenter = GCLandingPagePresenter(view: view, router: self.router, api: Router<YelpAPI>())
         presenter?.interactor = self.interactor
     }
 
@@ -46,5 +47,10 @@ class GCLandingPagePresenterTests: XCTestCase {
         presenter?.didGetBusinessDetails(withResult: .success(mockBusiness))
         XCTAssertEqual(view.numberOfTimesGetBusinessDetailsCalled, 1)
         XCTAssertNotNil(view.model)
+    }
+    
+    func testDidTapReviews() {
+        presenter?.didTapTopReviews()
+        XCTAssertEqual(router.numberOfTimesGoToReviewsCalled, 1)
     }
 }

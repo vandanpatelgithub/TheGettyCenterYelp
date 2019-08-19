@@ -13,6 +13,7 @@ protocol GCLandingPagePresentable: NameComponentPresenterDelegate {
     func didGetBusinessDetails(withResult result: Result<Business, Error>)
     
     var interactor: GCLandingPageInteractable! { get set }
+    var router: GCLandingPageRoutable? { get set }
 }
 
 class GCLandingPagePresenter {

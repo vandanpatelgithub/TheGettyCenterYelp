@@ -10,6 +10,7 @@
 import Foundation
 
 class GCLandingPagePresenterMock: GCLandingPagePresentable {
+    var router: GCLandingPageRoutable?
     var interactor: GCLandingPageInteractable!
     var numberOfTimesOnViewDidLoadCalled = 0
     var numberOfTimesGetBusinessDetailsCalled = 0
